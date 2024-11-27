@@ -14,8 +14,8 @@
             <Image url="@img/Login.png" />
          </image>
       </ImageView>
-      <TextField fx:id="tfName" layoutX="480.0" layoutY="166.0" prefHeight="19.0" prefWidth="155.0" promptText="Username" />
-      <PasswordField fx:id="tfPassword" layoutX="480.0" layoutY="211.0" prefHeight="26.0" prefWidth="155.0" promptText="Password" />
+      <TextField fx:id="tfName" layoutX="480.0" layoutY="166.0" prefHeight="19.0" prefWidth="155.0" promptText="Username" style="-fx-background-color: transparant;" />
+      <PasswordField fx:id="tfPassword" layoutX="480.0" layoutY="211.0" prefHeight="26.0" prefWidth="155.0" promptText="Password" style="-fx-background-color: transparant;" />
       <Button fx:id="btnLogin" layoutX="497.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: transparant; -fx-text-fill: transparant;" text="Button" textFill="TRANSPARENT" />
    </children>
 </AnchorPane>

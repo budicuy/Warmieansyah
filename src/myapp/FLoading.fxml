@@ -23,6 +23,6 @@
             <SepiaTone />
          </effect>
       </ProgressBar>
-      <Text fx:id="txtLoading" layoutX="357.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loading...." />
+      <Text fx:id="txtLoading" layoutX="343.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loading...." />
    </children>
 </AnchorPane>

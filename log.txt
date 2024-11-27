@@ -122,3 +122,13 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-25 16:53:05 - Berhasil membuat koneksi ke database
 2024-11-25 16:53:51 - Berhasil membuat koneksi ke database
 2024-11-25 16:53:52 - Berhasil membuat koneksi ke database
+2024-11-27 14:46:05 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 14:49:35 - Berhasil membuat koneksi ke database
+2024-11-27 14:49:36 - Berhasil membuat koneksi ke database
+2024-11-27 14:55:34 - Berhasil membuat koneksi ke database
+2024-11-27 15:05:20 - Berhasil membuat koneksi ke database
+2024-11-27 15:05:22 - Berhasil membuat koneksi ke database
+2024-11-27 15:07:31 - Berhasil membuat koneksi ke database
+2024-11-27 15:07:33 - Berhasil membuat koneksi ke database
