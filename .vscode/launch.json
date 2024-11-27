@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FAdmin",
+            "request": "launch",
+            "mainClass": "myapp.FAdmin",
+            "projectName": "Warmieansyah_55ea60eb"
+        },
+        {
+            "type": "java",
+            "name": "AdminController",
+            "request": "launch",
+            "mainClass": "myapp.AdminController",
+            "projectName": "Warmieansyah_55ea60eb"
+        },
+        {
+            "type": "java",
+            "name": "UserControlle",
+            "request": "launch",
+            "mainClass": "myapp.UserControlle",
+            "projectName": "Warmieansyah_55ea60eb"
+        },
+        {
+            "type": "java",
+            "name": "Koneksi",
+            "request": "launch",
+            "mainClass": "myapp.Koneksi",
+            "projectName": "Warmieansyah_55ea60eb"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "myapp.App",
+            "projectName": "Warmieansyah_55ea60eb",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-23.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
