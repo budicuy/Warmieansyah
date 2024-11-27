@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 public class FAbout extends Application {
 
     @FXML
-    private Button BtDashboard;
+    private Button btDash;
 
     @FXML
     private Button btMenu;
@@ -41,7 +41,7 @@ public class FAbout extends Application {
 private void handleDashboardButtonAction() {
     try {
         Parent root = FXMLLoader.load(getClass().getResource("FAdmin.fxml"));
-        Stage stage = (Stage) BtDashboard.getScene().getWindow();
+        Stage stage = (Stage) btDash.getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.setTitle("Admin Dashboard");
     } catch (Exception e) {

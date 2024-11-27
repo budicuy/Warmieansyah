@@ -21,10 +21,10 @@ import java.sql.Statement;
 public class FAdmin extends Application {
 
     @FXML
-    private Button BtDashboard;
+    private Button btMenu;
 
     @FXML
-    private Button BtTambah;
+    private Button btKeluar;
 
     @FXML
     private Button btAbout;
@@ -160,4 +160,37 @@ public class FAdmin extends Application {
         initTable(); // Initialize the table columns with action buttons
     }
 
+@FXML
+private void handleKeluarButtonAction() {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("FLogin.fxml"));
+        Stage stage = (Stage) btKeluar.getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Login");
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+@FXML
+private void handleMenuButtonAction() {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("FMakanan.fxml"));
+        Stage stage = (Stage) btMenu.getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Menu");
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+@FXML
+private void handleAboutButtonAction() {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("FAbout.fxml"));
+        Stage stage = (Stage) btAbout.getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.setTitle("About");
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 }

@@ -14,17 +14,18 @@
             <Image url="@img/Dashboard%20(1).png" />
          </image>
       </ImageView>
-      <Button fx:id="btAbout" layoutX="-4.0" layoutY="142.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="80.0" text="Button" visible="false" />
-      <Button fx:id="BtDashboard" layoutY="82.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="80.0" text="Button" visible="false" />
-      <Button fx:id="BtTambah" layoutX="619.0" layoutY="16.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="119.0" text="Button" visible="false" />
-      <TableView fx:id="tblPesanan" layoutX="107.0" layoutY="104.0" prefHeight="274.0" prefWidth="632.0">
+      <Button fx:id="btMenu" layoutX="-4.0" layoutY="142.0" mnemonicParsing="false" onAction="#handleMenuButtonAction" prefHeight="45.0" prefWidth="80.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="btAbout" layoutX="-2.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleAboutButtonAction" prefHeight="46.0" prefWidth="80.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="btKeluar" layoutX="7.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleKeluarButtonAction" prefHeight="26.0" prefWidth="62.0" style="-fx-opacity: 0;" text="Button" />
+      <TableView fx:id="tblPesanan" layoutX="104.0" layoutY="100.0" prefHeight="278.0" prefWidth="638.0" styleClass="co">
         <columns>
-          <TableColumn fx:id="tblId" prefWidth="75.0" text="NO" />
-          <TableColumn fx:id="tblNama" prefWidth="99.99992370605469" text="NAMA" />
-            <TableColumn fx:id="tblTanggalPesanan" prefWidth="77.33331298828125" text="TANGGAL" />
-            <TableColumn fx:id="tblMenuMakanan" prefWidth="100.6666259765625" text="MAKANAN" />
-            <TableColumn fx:id="tblMenuMinuman" prefWidth="93.33334350585938" text="MINUMAN" />
-            <TableColumn fx:id="tblTotalHarga" prefWidth="106.0" text="TOTAL HARGA" />
+          <TableColumn fx:id="tblId" prefWidth="35.20001220703125" text="NO" />
+          <TableColumn fx:id="tblNama" prefWidth="88.79998779296875" text="NAMA" />
+            <TableColumn fx:id="tblMeja" prefWidth="64.0" text="NO MEJA" />
+            <TableColumn fx:id="tblTanggalPesanan" prefWidth="88.79998779296875" text="TANGGAL" />
+            <TableColumn fx:id="tblMenuMakanan" prefWidth="87.20001220703125" text="MAKANAN" />
+            <TableColumn fx:id="tblMenuMinuman" prefWidth="94.39996337890625" text="MINUMAN" />
+            <TableColumn fx:id="tblTotalHarga" prefWidth="104.80010986328125" text="TOTAL HARGA" />
         </columns>
       </TableView>
    </children>

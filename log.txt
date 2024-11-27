@@ -170,3 +170,33 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-27 17:21:10 - Gagal membuat koneksi ke database Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 19:35:43 - Berhasil membuat koneksi ke database
+2024-11-27 19:37:21 - Berhasil membuat koneksi ke database
+2024-11-27 19:43:51 - Berhasil membuat koneksi ke database
+2024-11-27 19:43:54 - Berhasil membuat koneksi ke database
+2024-11-27 19:45:04 - Berhasil membuat koneksi ke database
+2024-11-27 19:45:06 - Berhasil membuat koneksi ke database
+2024-11-27 19:47:57 - Berhasil membuat koneksi ke database
+2024-11-27 19:48:16 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:31 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:45 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:50 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:51 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:51 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:52 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:53 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:55 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:55 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:56 - Berhasil membuat koneksi ke database
+2024-11-27 19:49:58 - Berhasil membuat koneksi ke database
+2024-11-27 19:50:11 - Berhasil membuat koneksi ke database
+2024-11-27 19:51:32 - Berhasil membuat koneksi ke database
+2024-11-27 19:51:33 - Berhasil membuat koneksi ke database
+2024-11-27 19:53:16 - Berhasil membuat koneksi ke database
+2024-11-27 19:53:22 - Berhasil membuat koneksi ke database
+2024-11-27 19:53:26 - Berhasil membuat koneksi ke database
+2024-11-27 19:53:32 - Berhasil membuat koneksi ke database
+2024-11-27 19:54:08 - Berhasil membuat koneksi ke database
+2024-11-27 19:54:13 - Berhasil membuat koneksi ke database
+2024-11-27 19:54:21 - Berhasil membuat koneksi ke database
+2024-11-27 19:54:24 - Berhasil membuat koneksi ke database
