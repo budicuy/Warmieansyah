@@ -132,3 +132,41 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-27 15:05:22 - Berhasil membuat koneksi ke database
 2024-11-27 15:07:31 - Berhasil membuat koneksi ke database
 2024-11-27 15:07:33 - Berhasil membuat koneksi ke database
+2024-11-27 15:36:00 - Berhasil membuat koneksi ke database
+2024-11-27 15:36:01 - Berhasil membuat koneksi ke database
+2024-11-27 17:19:12 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:13 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:14 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:15 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:15 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:15 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:21 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:22 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:22 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:19:22 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:20:17 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-27 17:21:10 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

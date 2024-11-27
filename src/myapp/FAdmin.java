@@ -159,4 +159,5 @@ public class FAdmin extends Application {
         loadDataPesanan(); // Memuat data saat pertama kali controller diinisialisasi
         initTable(); // Initialize the table columns with action buttons
     }
+
 }

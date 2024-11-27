@@ -14,7 +14,7 @@ public class FAbout extends Application {
     private Button BtDashboard;
 
     @FXML
-    private Button btAbout;
+    private Button btMenu;
 
     @FXML
     private Button btKeluar;
@@ -56,6 +56,17 @@ private void handleKeluarButtonAction() {
         Stage stage = (Stage) btKeluar.getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.setTitle("Login");
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+@FXML
+private void handleMenuButtonAction() {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("FMakanan.fxml"));
+        Stage stage = (Stage) btMenu.getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.setTitle("");
     } catch (Exception e) {
         e.printStackTrace();
     }

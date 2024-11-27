@@ -6,16 +6,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myapp.FAbout">
    <children>
       <ImageView fitHeight="800.0" fitWidth="767.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/About.png" />
          </image>
       </ImageView>
-      <Button fx:id="btDashboard" layoutX="-3.0" layoutY="78.0" mnemonicParsing="false" opacity="0.0" prefHeight="64.0" prefWidth="74.0" text="Button" />
-      <Button fx:id="btAbout" layoutY="142.0" mnemonicParsing="false" opacity="0.0" prefHeight="64.0" prefWidth="74.0" text="Button" />
-      <Button fx:id="btKeluar" layoutX="11.0" layoutY="363.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btDashboard" layoutX="-3.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleDashboardButtonAction" opacity="0.0" prefHeight="64.0" prefWidth="74.0" text="Button" />
+      <Button fx:id="btMenu" layoutY="142.0" mnemonicParsing="false" onAction="#handleMenuButtonAction" opacity="0.0" prefHeight="64.0" prefWidth="74.0" text="Button" />
+      <Button fx:id="btKeluar" layoutX="11.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleKeluarButtonAction" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
