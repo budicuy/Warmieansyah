@@ -20,6 +20,7 @@ public class FLoading {
 
     public void initialize() {
         // Timeline untuk memperbarui progress bar
+        @SuppressWarnings("unused")
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.millis(50), e -> updateProgress()));
         timeline.setCycleCount(100); // Total 100 langkah (100%)
