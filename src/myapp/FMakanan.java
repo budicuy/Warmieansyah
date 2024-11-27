@@ -53,7 +53,7 @@ public class FMakanan extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("FMakanan.fxml"));
             primaryStage.setScene(new Scene(root));
-            primaryStage.setTitle("Menu");
+            primaryStage.setTitle("Menu Makanan");
             primaryStage.show();
         } catch (Exception e) {
             e.printStackTrace();
@@ -171,7 +171,7 @@ public class FMakanan extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("FAdmin.fxml"));
             Stage stage = (Stage) btDash.getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Menu");
+            stage.setTitle("Admin");
         } catch (Exception e) {
             e.printStackTrace();
         }
