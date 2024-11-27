@@ -154,5 +154,60 @@ public class FMakanan extends Application {
         loadDataMakanan(); // Memuat data saat pertama kali controller diinisialisasi
         initTable(); // Initialize the table columns with action buttons
     }
+    @FXML
+    private void Keluar() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FLogin.fxml"));
+            Stage stage = (Stage) btKeluar.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Login");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void Admin() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FAdmin.fxml"));
+            Stage stage = (Stage) btDash.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Menu");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void About() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FAbout.fxml"));
+            Stage stage = (Stage) btAbout.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("About");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
+    @FXML
+    private void Minuman() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FMinuman.fxml"));
+            Stage stage = (Stage) btMinuman.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Minuman");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void Tambah() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FTambah.fxml"));
+            Stage stage = (Stage) btAbout.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("About");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

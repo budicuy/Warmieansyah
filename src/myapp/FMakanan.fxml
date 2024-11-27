@@ -15,7 +15,7 @@
             <Image url="@img/Manajemen%20Makanan.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tblMakanan" layoutX="295.0" layoutY="64.0" prefHeight="320.0" prefWidth="450.0">
+      <TableView fx:id="tblMakanan" layoutX="295.0" layoutY="64.0" onSort="#initialize" prefHeight="320.0" prefWidth="450.0">
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
@@ -25,12 +25,11 @@
             <TableColumn fx:id="tblHarga" prefWidth="204.800048828125" text="HARGA" />
          </columns>
       </TableView>
-      <Button fx:id="btMakanan" layoutX="136.0" layoutY="131.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" style="-fx-opacity: 0%;" text="Button" />
-      <Button fx:id="btMinuman" layoutX="136.0" layoutY="180.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" style="-fx-opacity: 0%;" text="Button" />
-      <Button fx:id="btTambah" layoutX="136.0" layoutY="288.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" style="-fx-opacity: 0%;" text="Button" />
-      <Button fx:id="btDashboard" layoutY="88.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="74.0" style="-fx-opacity: 0%;" text="Button" />
-      <Button fx:id="btAbout" layoutY="206.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="74.0" style="-fx-opacity: 0%;" text="Button" />
-      <Button fx:id="btKeluar" layoutX="11.0" layoutY="363.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btMinuman" layoutX="136.0" layoutY="180.0" mnemonicParsing="false" onAction="#Minuman" prefHeight="26.0" prefWidth="107.0" style="-fx-opacity: 0%;" text="Button" />
+      <Button fx:id="btTambah" layoutX="136.0" layoutY="288.0" mnemonicParsing="false" onAction="#Tambah" prefHeight="26.0" prefWidth="107.0" style="-fx-opacity: 0%;" text="Button" />
+      <Button fx:id="btDash" layoutY="88.0" mnemonicParsing="false" onAction="#Admin" prefHeight="58.0" prefWidth="74.0" style="-fx-opacity: 0%;" text="Button" />
+      <Button fx:id="btAbout" layoutY="206.0" mnemonicParsing="false" onAction="#About" prefHeight="58.0" prefWidth="74.0" style="-fx-opacity: 0%;" text="Button" />
+      <Button fx:id="btKeluar" layoutX="11.0" layoutY="363.0" mnemonicParsing="false" onAction="#Keluar" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>

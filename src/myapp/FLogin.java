@@ -60,11 +60,13 @@ public class FLogin {
                     System.out.println("Login berhasil sebagai user");
 
                     // buka scene user
-                    UserController user = new UserController();
-                    user.start(new Stage());
+                    Parent root = FXMLLoader.load(getClass().getResource("FCostumer.fxml"));
+                    Stage stage = new Stage();
+                    stage.setScene(new Scene(root));
+                    stage.show();
                     // tutup scene login
-                    Stage stage = (Stage) btnLogin.getScene().getWindow();
-                    stage.close();
+                    Stage currentStage = (Stage) btnLogin.getScene().getWindow();
+                    currentStage.close();
                 }
             } else {
                 // tampilkan dialog login gagal
