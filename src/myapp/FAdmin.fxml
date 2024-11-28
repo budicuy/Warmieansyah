@@ -21,7 +21,7 @@
         <columns>
           <TableColumn fx:id="tblId" prefWidth="35.20001220703125" text="NO" />
           <TableColumn fx:id="tblNama" prefWidth="88.79998779296875" text="NAMA" />
-            <TableColumn fx:id="tblMeja" prefWidth="64.0" text="NO MEJA" />
+            <TableColumn fx:id="tblNoMeja" prefWidth="64.0" text="NO MEJA" />
             <TableColumn fx:id="tblTanggalPesanan" prefWidth="88.79998779296875" text="TANGGAL" />
             <TableColumn fx:id="tblMenuMakanan" prefWidth="87.20001220703125" text="MAKANAN" />
             <TableColumn fx:id="tblMenuMinuman" prefWidth="94.39996337890625" text="MINUMAN" />

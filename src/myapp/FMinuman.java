@@ -199,7 +199,7 @@ public class FMinuman extends Application {
     @FXML
     private void Tambah() {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("FTambah.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("FTambahMinuman.fxml"));
             Stage stage = (Stage) btAbout.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("About");

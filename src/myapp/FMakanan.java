@@ -199,10 +199,10 @@ public class FMakanan extends Application {
     @FXML
     private void Tambah() {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("FTambah.fxml"));
-            Stage stage = (Stage) btAbout.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("FTambahMakanan.fxml"));
+            Stage stage = (Stage) btTambah.getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("About");
+            stage.setTitle("Tambah Makanan");
         } catch (Exception e) {
             e.printStackTrace();
         }

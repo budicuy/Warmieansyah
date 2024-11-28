@@ -4,20 +4,21 @@ public class Pesanan {
 
     private int id;
     private String nama;
-    private String tanggal_pesanan;
-    private String menu_makanan;
-    private String menu_minuman;
-    private String total_harga;
+    private int noMeja;
+    private String tanggalPesanan;
+    private String menuMakanan;
+    private String menuMinuman;
+    private String totalHarga;
 
     // Constructor
-    public Pesanan(int id, String nama, String tanggal_pesanan, String menu_makanan, String menu_minuman,
-            String total_harga) {
+    public Pesanan(int id, String nama, int noMeja, String tanggalPesanan, String menuMakanan, String menuMinuman, String totalHarga) {
         this.id = id;
         this.nama = nama;
-        this.tanggal_pesanan = tanggal_pesanan;
-        this.menu_makanan = menu_makanan;
-        this.menu_minuman = menu_minuman;
-        this.total_harga = total_harga;
+        this.noMeja = noMeja;
+        this.tanggalPesanan = tanggalPesanan;
+        this.menuMakanan = menuMakanan;
+        this.menuMinuman = menuMinuman;
+        this.totalHarga = totalHarga;
     }
 
     // Getters and Setters
@@ -29,43 +30,51 @@ public class Pesanan {
         this.id = id;
     }
 
-    public String getnama() {
+    public String getNama() {
         return nama;
     }
 
-    public void setnama(String nama) {
+    public void setNama(String nama) {
         this.nama = nama;
     }
 
-    public String getTanggal_pesanan() {
-        return tanggal_pesanan;
+    public int getNoMeja() {
+        return noMeja;
     }
 
-    public void setTanggal_pesanan(String tanggal_pesanan) {
-        this.tanggal_pesanan = tanggal_pesanan;
+    public void setNoMeja(int noMeja) {
+        this.noMeja = noMeja;
     }
 
-    public String getMenu_makanan() {
-        return menu_makanan;
+    public String getTanggalPesanan() {
+        return tanggalPesanan;
     }
 
-    public void setMenu_makanan(String menu_makanan) {
-        this.menu_makanan = menu_makanan;
+    public void setTanggalPesanan(String tanggalPesanan) {
+        this.tanggalPesanan = tanggalPesanan;
     }
 
-    public String getMenu_minuman() {
-        return menu_minuman;
+    public String getMenuMakanan() {
+        return menuMakanan;
     }
 
-    public void setMenu_minuman(String menu_minuman) {
-        this.menu_minuman = menu_minuman;
+    public void setMenuMakanan(String menuMakanan) {
+        this.menuMakanan = menuMakanan;
     }
 
-    public String getTotal_harga() {
-        return total_harga;
+    public String getMenuMinuman() {
+        return menuMinuman;
     }
 
-    public void setTotal_harga(String total_harga) {
-        this.total_harga = total_harga;
+    public void setMenuMinuman(String menuMinuman) {
+        this.menuMinuman = menuMinuman;
+    }
+
+    public String getTotalHarga() {
+        return totalHarga;
+    }
+
+    public void setTotalHarga(String totalHarga) {
+        this.totalHarga = totalHarga;
     }
 }
