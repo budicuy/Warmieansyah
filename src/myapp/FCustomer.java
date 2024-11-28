@@ -9,6 +9,7 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+
 public class FCustomer extends Application {
 
     @FXML
@@ -22,17 +23,17 @@ public class FCustomer extends Application {
     @FXML
     private Label lblItem1, lblItem2, lblItem3, lblItem4;
     @FXML
-    private Label lblHarga1, lblHarga2, lblHarga3, lblHarga4; 
+    private Label lblHarga1, lblHarga2, lblHarga3, lblHarga4;
     @FXML
     private Label lblTotalHarga;
     @FXML
     private Button btClear;
     @FXML
     private TextField txtNama, txtMeja;
+
     private Label[] lblHargaArray;
     private Label[] lblItemArray;
     
-
     public static void main(String[] args) {
         launch(args);
     }
@@ -51,9 +52,9 @@ public class FCustomer extends Application {
 
     @FXML
     private void initialize() {
-        // Inisialisasi array label harga
+        // Inisialisasi array label harga dan item
         lblHargaArray = new Label[]{lblHarga1, lblHarga2, lblHarga3, lblHarga4};
-    lblItemArray = new Label[]{lblItem1, lblItem2, lblItem3, lblItem4};
+        lblItemArray = new Label[]{lblItem1, lblItem2, lblItem3, lblItem4};
     }
 
     @FXML
@@ -81,18 +82,16 @@ public class FCustomer extends Application {
     }
 
     private void addItemAndPriceToNextAvailableLabel(String item, String harga) {
-        // Mencari label item dan harga yang kosong
         for (int i = 0; i < lblItemArray.length; i++) {
             if (lblItemArray[i].getText().isEmpty()) {
-                lblItemArray[i].setText(item);   // Menambahkan item ke label
-                lblHargaArray[i].setText(harga);  // Menambahkan harga ke label
-                calculateTotalHarga();            // Menghitung total harga setiap kali ada perubahan
+                lblItemArray[i].setText(item);   
+                lblHargaArray[i].setText(harga);  
+                calculateTotalHarga();            
                 break;
             }
         }
     }
-    
-    // Fungsi untuk menghitung total harga
+
     private void calculateTotalHarga() {
         int totalHarga = 0;
         for (Label lblHarga : lblHargaArray) {
@@ -100,84 +99,80 @@ public class FCustomer extends Application {
                 totalHarga += Integer.parseInt(lblHarga.getText());
             }
         }
-        lblTotalHarga.setText(String.valueOf(totalHarga)); // Tampilkan total harga
+        lblTotalHarga.setText(String.valueOf(totalHarga)); 
     }
+
     @FXML
-private void Clear() {
+    private void Clear() {
+        txtMeja.setText("");
+        txtNama.setText("");
+        lblItem1.setText("");
+        lblItem2.setText("");
+        lblItem3.setText("");
+        lblItem4.setText("");
+        lblHarga1.setText("");
+        lblHarga2.setText("");
+        lblHarga3.setText("");
+        lblHarga4.setText("");
+        lblTotalHarga.setText("0");
+    }
 
-    txtMeja.setText("");
-    txtNama.setText("");
-    
-    lblItem1.setText("");
-    lblItem2.setText("");
-    lblItem3.setText("");
-    lblItem4.setText("");
-
-    lblHarga1.setText("");
-    lblHarga2.setText("");
-    lblHarga3.setText("");
-    lblHarga4.setText("");
-
-    lblTotalHarga.setText("0");
-}
-
-    
-    // Harga Tetap untuk Makanan dan Minuman
+    // Fungsi untuk menambah makanan dan minuman
     @FXML
     private void TambahMakanan1() {
         addItemAndPriceToNextAvailableLabel("Makanan 1", "5000");
     }
-    
+
     @FXML
     private void TambahMakanan2() {
         addItemAndPriceToNextAvailableLabel("Makanan 2", "5000");
     }
-    
+
     @FXML
     private void TambahMakanan3() {
         addItemAndPriceToNextAvailableLabel("Makanan 3", "5500");
     }
-    
+
     @FXML
     private void TambahMakanan4() {
         addItemAndPriceToNextAvailableLabel("Makanan 4", "5500");
     }
-    
+
     @FXML
     private void TambahMakanan5() {
         addItemAndPriceToNextAvailableLabel("Makanan 5", "7000");
     }
-    
+
     @FXML
     private void TambahMakanan6() {
         addItemAndPriceToNextAvailableLabel("Makanan 6", "7000");
     }
-    
+
     @FXML
     private void TambahMinuman1() {
         addItemAndPriceToNextAvailableLabel("Minuman 1", "6000");
     }
-    
+
     @FXML
     private void TambahMinuman2() {
         addItemAndPriceToNextAvailableLabel("Minuman 2", "5000");
     }
-    
+
     @FXML
     private void TambahMinuman3() {
         addItemAndPriceToNextAvailableLabel("Minuman 3", "4000");
     }
-    
+
     @FXML
     private void TambahMinuman4() {
         addItemAndPriceToNextAvailableLabel("Minuman 4", "6000");
     }
-    
+
     @FXML
     private void TambahMinuman5() {
         addItemAndPriceToNextAvailableLabel("Minuman 5", "6000");
     }
-    
+
     @FXML
     private void TambahMinuman6() {
         addItemAndPriceToNextAvailableLabel("Minuman 6", "7000");
@@ -185,22 +180,50 @@ private void Clear() {
 
     @FXML
     private void Order() {
+        String namaPesanan = txtNama.getText();
+        int nomorMeja = 0;
+        try {
+            nomorMeja = Integer.parseInt(txtMeja.getText());
+        } catch (NumberFormatException e) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Kesalahan");
+            alert.setHeaderText("Nomor meja tidak valid");
+            alert.setContentText("Silakan masukkan nomor meja yang valid.");
+            alert.showAndWait();
+            return;
+        }
+
+        // Memastikan nama dan nomor meja sudah diisi
+        if (namaPesanan == null || namaPesanan.isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Kesalahan");
+            alert.setHeaderText("Nama belum diisi");
+            alert.setContentText("Silakan masukkan nama pelanggan.");
+            alert.showAndWait();
+            return;
+        }
+
+        if (nomorMeja == 0) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Kesalahan");
+            alert.setHeaderText("Nomor Meja belum diisi");
+            alert.setContentText("Silakan masukkan nomor meja.");
+            alert.showAndWait();
+            return;
+        }
+
         // Mengambil data dari label item dan harga
         String[] items = {lblItem1.getText(), lblItem2.getText(), lblItem3.getText(), lblItem4.getText()};
         String[] prices = {lblHarga1.getText(), lblHarga2.getText(), lblHarga3.getText(), lblHarga4.getText()};
-    
-        // Ambil data tambahan dari input pengguna (misalnya menggunakan TextField)
-        String nama = "Nama Pelanggan";  // Ganti dengan data dari TextField
-        int noMeja = 5; // Ganti dengan data dari input pengguna (misalnya TextField)
-        String tanggalPesanan = java.time.LocalDate.now().toString(); // Mengambil tanggal hari ini
-    
-        // Gabungkan item makanan dan minuman menjadi satu string
+
+        String tanggalPesanan = java.time.LocalDate.now().toString();
+
+        // Gabungkan item makanan dan minuman
         StringBuilder menuMakanan = new StringBuilder();
         StringBuilder menuMinuman = new StringBuilder();
-        
+
         for (int i = 0; i < items.length; i++) {
             if (!items[i].isEmpty() && !prices[i].isEmpty()) {
-                // Pisahkan makanan dan minuman sesuai kebutuhan
                 if (items[i].contains("Makanan")) {
                     if (menuMakanan.length() > 0) menuMakanan.append(", ");
                     menuMakanan.append(items[i]);
@@ -210,7 +233,7 @@ private void Clear() {
                 }
             }
         }
-    
+
         // Menghitung total harga
         int totalHarga = 0;
         for (String harga : prices) {
@@ -218,32 +241,29 @@ private void Clear() {
                 totalHarga += Integer.parseInt(harga);
             }
         }
-    
-        // Koneksi ke database menggunakan Koneksi.java
+
+        // Koneksi ke database
         try (Connection conn = Koneksi.configDB()) {
-            // SQL untuk menyimpan data pesanan
             String sql = "INSERT INTO pesanan (nama, no_meja, tanggal_pesan, menu_makanan, menu_minuman, total_harga) VALUES (?, ?, ?, ?, ?, ?)";
             try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-                stmt.setString(1, nama);  // Nama pelanggan
-                stmt.setInt(2, noMeja);   // Nomor meja
-                stmt.setString(3, tanggalPesanan);  // Tanggal pesanan (perbaikan di sini)
-                stmt.setString(4, menuMakanan.toString());  // Menu makanan yang dipilih
-                stmt.setString(5, menuMinuman.toString());  // Menu minuman yang dipilih
-                stmt.setInt(6, totalHarga);  // Total harga
-    
-                stmt.executeUpdate();  // Menjalankan query insert
+                stmt.setString(1, namaPesanan);
+                stmt.setInt(2, nomorMeja);
+                stmt.setString(3, tanggalPesanan);
+                stmt.setString(4, menuMakanan.toString());
+                stmt.setString(5, menuMinuman.toString());
+                stmt.setInt(6, totalHarga);
+                stmt.executeUpdate();
             }
-    
-            // Setelah berhasil, tampilkan konfirmasi ke pengguna
+
+            // Konfirmasi pesanan berhasil
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Pesanan Berhasil");
             alert.setHeaderText(null);
             alert.setContentText("Pesanan Anda telah diterima.");
             alert.showAndWait();
-            
-            // Setelah berhasil, Anda dapat membersihkan atau mengatur ulang tampilan pesanan jika diperlukan
+
+            Clear();  // Bersihkan tampilan setelah order
         } catch (Exception e) {
-            // Menangani error koneksi database
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Kesalahan");
             alert.setHeaderText("Terjadi kesalahan saat memproses pesanan.");
@@ -251,6 +271,4 @@ private void Clear() {
             alert.showAndWait();
         }
     }
-    
-
 }

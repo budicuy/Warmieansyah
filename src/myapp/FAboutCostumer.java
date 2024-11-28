@@ -51,7 +51,7 @@ private void handleMenuButtonAction() {
         Parent root = FXMLLoader.load(getClass().getResource("FCostumer.fxml"));
         Stage stage = (Stage) btMenu.getScene().getWindow();
         stage.setScene(new Scene(root));
-        stage.setTitle("");
+        stage.setTitle("Menu");
     } catch (Exception e) {
         e.printStackTrace();
     }
