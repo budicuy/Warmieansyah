@@ -1,104 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myapp.FCustomer">
    <children>
       <ImageView fitHeight="400.0" fitWidth="768.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/Order.png" />
          </image>
       </ImageView>
-      <Button fx:id="btTambahMakanan1" layoutX="128.0" layoutY="160.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMakanan1" layoutX="128.0" layoutY="160.0" mnemonicParsing="false" onAction="#TambahMakanan1" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font></Button>
-      <Button fx:id="btTambahMakanan2" layoutX="220.0" layoutY="160.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMakanan2" layoutX="220.0" layoutY="160.0" mnemonicParsing="false" onAction="#TambahMakanan2" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMakanan3" layoutX="128.0" layoutY="255.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMakanan3" layoutX="128.0" layoutY="255.0" mnemonicParsing="false" onAction="#TambahMakanan3" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMakanan4" layoutX="220.0" layoutY="255.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMakanan4" layoutX="220.0" layoutY="255.0" mnemonicParsing="false" onAction="#TambahMakanan4" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMakanan5" layoutX="128.0" layoutY="350.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMakanan5" layoutX="128.0" layoutY="350.0" mnemonicParsing="false" onAction="#TambahMakanan5" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMakanan6" layoutX="220.0" layoutY="350.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMakanan6" layoutX="220.0" layoutY="350.0" mnemonicParsing="false" onAction="#TambahMakanan6" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMinuman1" layoutX="320.0" layoutY="160.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMinuman1" layoutX="320.0" layoutY="160.0" mnemonicParsing="false" onAction="#TambahMinuman1" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMinuman2" layoutX="414.0" layoutY="160.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMinuman2" layoutX="414.0" layoutY="160.0" mnemonicParsing="false" onAction="#TambahMinuman2" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMinuman3" layoutX="320.0" layoutY="255.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMinuman3" layoutX="320.0" layoutY="255.0" mnemonicParsing="false" onAction="#TambahMinuman3" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMinuman4" layoutX="414.0" layoutY="255.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMinuman4" layoutX="414.0" layoutY="255.0" mnemonicParsing="false" onAction="#TambahMinuman4" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMinuman5" layoutX="320.0" layoutY="350.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMinuman5" layoutX="320.0" layoutY="350.0" mnemonicParsing="false" onAction="#TambahMinuman5" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMinuman6" layoutX="414.0" layoutY="350.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btTambahMinuman6" layoutX="414.0" layoutY="350.0" mnemonicParsing="false" onAction="#TambahMinuman6" prefHeight="11.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btTambahMinuman61" layoutX="584.0" layoutY="335.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btOrder" layoutX="519.0" layoutY="331.0" mnemonicParsing="false" onAction="#Order" prefHeight="30.0" prefWidth="78.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <Button fx:id="btAbout" layoutY="145.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="71.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btAbout" layoutY="145.0" mnemonicParsing="false" onAction="#About" prefHeight="59.0" prefWidth="71.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
       </Button>
-      <TextField fx:id="txtNama" layoutX="596.0" layoutY="87.0" prefHeight="15.0" prefWidth="136.0" style="-fx-background-color: FFFFFFF;" />
-      <TextField fx:id="txtMeja" layoutX="596.0" layoutY="113.0" prefHeight="15.0" prefWidth="136.0" style="-fx-background-color: FFFFFFF;" />
-      <TextField fx:id="txtIem1" layoutX="516.0" layoutY="178.0" prefHeight="26.0" prefWidth="144.0" />
-      <TextField fx:id="txtItem2" layoutX="516.0" layoutY="207.0" prefHeight="26.0" prefWidth="144.0" />
-      <TextField fx:id="txtItem3" layoutX="517.0" layoutY="235.0" prefHeight="26.0" prefWidth="144.0" />
-      <TextField fx:id="txtItem4" layoutX="517.0" layoutY="263.0" prefHeight="26.0" prefWidth="144.0" />
-      <TextField fx:id="txtHarga1" layoutX="662.0" layoutY="178.0" prefHeight="26.0" prefWidth="78.0" />
-      <TextField fx:id="txtHarga2" layoutX="662.0" layoutY="206.0" prefHeight="26.0" prefWidth="78.0" />
-      <TextField fx:id="txtHarga3" layoutX="662.0" layoutY="236.0" prefHeight="26.0" prefWidth="78.0" />
-      <TextField fx:id="txtHarga4" layoutX="662.0" layoutY="264.0" prefHeight="26.0" prefWidth="78.0" />
-      <TextField fx:id="txtTotal" layoutX="626.0" layoutY="297.0" prefHeight="18.0" prefWidth="99.0" style="-fx-background-color: fffffffffffff;">
+      <TextField fx:id="txtNama" layoutX="597.0" layoutY="85.0" prefHeight="15.0" prefWidth="136.0" style="-fx-background-color: FFFFFFF;" />
+      <TextField fx:id="txtMeja" layoutX="597.0" layoutY="113.0" prefHeight="15.0" prefWidth="136.0" style="-fx-background-color: FFFFFFF;" />
+      <Button fx:id="btKeluar" layoutX="10.0" layoutY="365.0" mnemonicParsing="false" onAction="#Keluar" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
-            <Font name="Inter Regular" size="11.0" />
+            <Font size="6.0" />
          </font>
-      </TextField>
-      <Button fx:id="btKeluar" layoutX="10.0" layoutY="365.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      </Button>
+      <Label fx:id="lblItem1" layoutX="523.0" layoutY="179.0" prefHeight="18.0" prefWidth="110.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem2" layoutX="523.0" layoutY="203.0" prefHeight="18.0" prefWidth="110.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem3" layoutX="523.0" layoutY="228.0" prefHeight="18.0" prefWidth="110.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem4" layoutX="523.0" layoutY="256.0" prefHeight="18.0" prefWidth="110.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHarga1" layoutX="643.0" layoutY="179.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHarga2" layoutX="643.0" layoutY="203.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHarga3" layoutX="643.0" layoutY="227.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHarga4" layoutX="643.0" layoutY="256.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalHarga" layoutX="631.0" layoutY="298.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btClear" layoutX="649.0" layoutY="332.0" mnemonicParsing="false" onAction="#Clear" prefHeight="30.0" prefWidth="78.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
