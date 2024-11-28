@@ -15,7 +15,7 @@
             <Image url="@img/Manajemen%20Makanan.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tblMakanan" layoutX="295.0" layoutY="64.0" onSort="#initialize" prefHeight="320.0" prefWidth="450.0">
+      <TableView fx:id="tblMakanan" editable="true" layoutX="295.0" layoutY="64.0" onSort="#initialize" prefHeight="320.0" prefWidth="450.0">
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>

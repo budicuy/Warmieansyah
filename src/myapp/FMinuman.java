@@ -202,7 +202,7 @@ public class FMinuman extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("FTambahMinuman.fxml"));
             Stage stage = (Stage) btAbout.getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("About");
+            stage.setTitle("Tambah Minuman");
         } catch (Exception e) {
             e.printStackTrace();
         }
