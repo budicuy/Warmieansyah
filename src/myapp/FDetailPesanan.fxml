@@ -15,7 +15,7 @@
             <Image url="@img/Detail%20Pesanan.png" />
          </image>
       </ImageView>
-      <Button fx:id="btKeluar" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="31.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btKeluar" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Keluar" prefHeight="34.0" prefWidth="31.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>
