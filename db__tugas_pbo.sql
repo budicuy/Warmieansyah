@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 27, 2024 at 05:27 AM
--- Server version: 8.0.30
--- PHP Version: 8.2.17
+-- Waktu pembuatan: 28 Nov 2024 pada 01.36
+-- Versi server: 8.0.30
+-- Versi PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,20 +24,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menu_makanan`
+-- Struktur dari tabel `makanan`
 --
 
-CREATE TABLE `menu_makanan` (
+CREATE TABLE `makanan` (
   `id` int NOT NULL,
-  `nama_menu` varchar(255) DEFAULT NULL,
+  `menu_makanan` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `harga` decimal(10,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `menu_makanan`
+-- Dumping data untuk tabel `makanan`
 --
 
-INSERT INTO `menu_makanan` (`id`, `nama_menu`, `harga`) VALUES
+INSERT INTO `makanan` (`id`, `menu_makanan`, `harga`) VALUES
 (15, 'Sakura Soto 4K', 4000.00),
 (16, 'Sakura Goreng 4K', 4000.00),
 (17, 'Indomie Goreng 6K', 6000.00),
@@ -56,20 +56,20 @@ INSERT INTO `menu_makanan` (`id`, `nama_menu`, `harga`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menu_minuman`
+-- Struktur dari tabel `minuman`
 --
 
-CREATE TABLE `menu_minuman` (
+CREATE TABLE `minuman` (
   `id` int NOT NULL,
-  `nama_menu` varchar(255) DEFAULT NULL,
+  `menu_minuman` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `harga` decimal(10,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `menu_minuman`
+-- Dumping data untuk tabel `minuman`
 --
 
-INSERT INTO `menu_minuman` (`id`, `nama_menu`, `harga`) VALUES
+INSERT INTO `minuman` (`id`, `menu_minuman`, `harga`) VALUES
 (1, 'Teh Botol', 4000.00),
 (2, 'Aqua', 3000.00),
 (3, 'Pocari Sweat', 6000.00),
@@ -102,12 +102,13 @@ INSERT INTO `menu_minuman` (`id`, `nama_menu`, `harga`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pesanan`
+-- Struktur dari tabel `pesanan`
 --
 
 CREATE TABLE `pesanan` (
   `id` int NOT NULL,
   `nama` varchar(255) DEFAULT NULL,
+  `no_meja` tinyint DEFAULT NULL,
   `tanggal_pesan` date DEFAULT NULL,
   `menu_makanan` varchar(255) DEFAULT NULL,
   `menu_minuman` varchar(255) DEFAULT NULL,
@@ -115,16 +116,22 @@ CREATE TABLE `pesanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `pesanan`
+-- Dumping data untuk tabel `pesanan`
 --
 
-INSERT INTO `pesanan` (`id`, `nama`, `tanggal_pesan`, `menu_makanan`, `menu_minuman`, `total_harga`) VALUES
-(2, 'ad', '2024-11-18', 'asdads', 'asdsa', 123123.00);
+INSERT INTO `pesanan` (`id`, `nama`, `no_meja`, `tanggal_pesan`, `menu_makanan`, `menu_minuman`, `total_harga`) VALUES
+(2, 'ad', NULL, '2024-11-18', 'asdads', 'asdsa', 123123.00),
+(3, 'Nama Pelanggan', 5, '2024-11-28', 'Makanan 4', '', 5500.00),
+(4, 'Nama Pelanggan', 5, '2024-11-28', 'Makanan 4, Makanan 2', 'Minuman 3, Minuman 1', 20500.00),
+(7, NULL, 0, '2024-11-28', '', 'Minuman 2', 5000.00),
+(8, NULL, 0, '2024-11-28', '', 'Minuman 4', 6000.00),
+(9, NULL, 0, '2024-11-28', '', 'Minuman 1, Minuman 2', 11000.00),
+(10, 'ada', 1, '2024-11-28', '', 'Minuman 2', 5000.00);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -136,7 +143,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `role`) VALUES
@@ -148,53 +155,53 @@ INSERT INTO `user` (`id`, `name`, `email`, `password`, `role`) VALUES
 --
 
 --
--- Indexes for table `menu_makanan`
+-- Indeks untuk tabel `makanan`
 --
-ALTER TABLE `menu_makanan`
+ALTER TABLE `makanan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `menu_minuman`
+-- Indeks untuk tabel `minuman`
 --
-ALTER TABLE `menu_minuman`
+ALTER TABLE `minuman`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `pesanan`
+-- Indeks untuk tabel `pesanan`
 --
 ALTER TABLE `pesanan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `menu_makanan`
+-- AUTO_INCREMENT untuk tabel `makanan`
 --
-ALTER TABLE `menu_makanan`
+ALTER TABLE `makanan`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT for table `menu_minuman`
+-- AUTO_INCREMENT untuk tabel `minuman`
 --
-ALTER TABLE `menu_minuman`
+ALTER TABLE `minuman`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT for table `pesanan`
+-- AUTO_INCREMENT untuk tabel `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;

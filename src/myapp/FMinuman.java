@@ -12,16 +12,16 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import model.Menu_Makanan;
+import model.Menu_Minuman;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class FMakanan extends Application {
+public class FMinuman extends Application {
 
     @FXML
-    private Button btMinuman;
+    private Button btMakanan;
 
     @FXML
     private Button btTambah;
@@ -36,10 +36,10 @@ public class FMakanan extends Application {
     private Button btKeluar;
 
     @FXML
-    private TableView<Menu_Makanan> tblMakanan;
+    private TableView<Menu_Minuman> tblMinuman;
 
     @FXML
-    private TableColumn<Menu_Makanan, String> tblId, tblMenuMakanan, tblHarga;
+    private TableColumn<Menu_Minuman, String> tblId, tblMenuMinuman, tblHarga;
 
     public static void main(String[] args) {
         launch(args);
@@ -48,9 +48,9 @@ public class FMakanan extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("FMakanan.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("FMinuman.fxml"));
             primaryStage.setScene(new Scene(root));
-            primaryStage.setTitle("Menu Makanan");
+            primaryStage.setTitle("Menu Minuman");
             primaryStage.show();
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,26 +61,26 @@ public class FMakanan extends Application {
     private void initTable() {
         // Set the cell value factories for the TableView columns
         tblId.setCellValueFactory(new PropertyValueFactory<>("id"));
-        tblMenuMakanan.setCellValueFactory(new PropertyValueFactory<>("menu_makanan"));
+        tblMenuMinuman.setCellValueFactory(new PropertyValueFactory<>("menu_minuman"));
         tblHarga.setCellValueFactory(new PropertyValueFactory<>("harga"));
 
         // Editable columns (TableCell)
-        tblMenuMakanan.setCellFactory(TextFieldTableCell.forTableColumn());
-        tblMenuMakanan.setOnEditCommit(event -> {
-            Menu_Makanan makanan = event.getRowValue();
-            makanan.setMenu_makanan(event.getNewValue());
-            updateMakanan(makanan); // Update in DB or model
+        tblMenuMinuman.setCellFactory(TextFieldTableCell.forTableColumn());
+        tblMenuMinuman.setOnEditCommit(event -> {
+            Menu_Minuman minuman = event.getRowValue();
+            minuman.setMenu_minuman(event.getNewValue());
+            updateMinuman(minuman); // Update in DB or model
         });
 
         tblHarga.setCellFactory(TextFieldTableCell.forTableColumn());
         tblHarga.setOnEditCommit(event -> {
-            Menu_Makanan makanan = event.getRowValue();
-            makanan.setHarga(event.getNewValue());
-            updateMakanan(makanan); // Update in DB or model
+            Menu_Minuman minuman = event.getRowValue();
+            minuman.setHarga(event.getNewValue());
+            updateMinuman(minuman); // Update in DB or model
         });
 
         // Column for Edit and Delete buttons
-        TableColumn<Menu_Makanan, Void> actionColumn = new TableColumn<>("Aksi");
+        TableColumn<Menu_Minuman, Void> actionColumn = new TableColumn<>("Aksi");
 
         actionColumn.setCellFactory(param -> new TableCell<>() {
             private final Button btnDelete = new Button("Hapus");
@@ -101,32 +101,32 @@ public class FMakanan extends Application {
             }
         });
 
-        tblMakanan.getColumns().add(actionColumn);
+        tblMinuman.getColumns().add(actionColumn);
     }
 
-    private void loadDataMakanan() {
-        ObservableList<Menu_Makanan> makananList = FXCollections.observableArrayList();
+    private void loadDataMinuman() {
+        ObservableList<Menu_Minuman> minumanList = FXCollections.observableArrayList();
         try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
-            ResultSet rs = st.executeQuery("SELECT * FROM makanan");
+            ResultSet rs = st.executeQuery("SELECT * FROM minuman");
             while (rs.next()) {
-                makananList.add(new Menu_Makanan(
+                minumanList.add(new Menu_Minuman(
                         rs.getInt("id"),
-                        rs.getString("menu_makanan"),
+                        rs.getString("menu_minuman"),
                         rs.getString("harga")));
             }
-            tblMakanan.setItems(makananList);
+            tblMinuman.setItems(minumanList);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    // Aksi untuk mengupdate makanan setelah diedit
-    private void updateMakanan(Menu_Makanan makanan) {
+    // Aksi untuk mengupdate minuman setelah diedit
+    private void updateMinuman(Menu_Minuman minuman) {
         try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
-            String query = "UPDATE makanan SET " +
-                    "menu_makanan = '" + makanan.getMenu_makanan() + "', " +
-                    "harga = '" + makanan.getHarga() + "' " +
-                    "WHERE id = " + makanan.getId();
+            String query = "UPDATE minuman SET " +
+                    "menu_minuman = '" + minuman.getMenu_minuman() + "', " +
+                    "harga = '" + minuman.getHarga() + "' " +
+                    "WHERE id = " + minuman.getId();
             st.executeUpdate(query);
         } catch (Exception e) {
             e.printStackTrace();
@@ -134,12 +134,12 @@ public class FMakanan extends Application {
     }
 
     // Aksi untuk tombol Hapus
-    private void handleDelete(Menu_Makanan makanan) {
-        if (makanan != null) {
+    private void handleDelete(Menu_Minuman minuman) {
+        if (minuman != null) {
             try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
-                String query = "DELETE FROM makanan WHERE id = " + makanan.getId();
+                String query = "DELETE FROM minuman WHERE id = " + minuman.getId();
                 st.executeUpdate(query);
-                loadDataMakanan(); // Refresh data setelah menghapus
+                loadDataMinuman(); // Refresh data setelah menghapus
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -148,7 +148,7 @@ public class FMakanan extends Application {
 
     @FXML
     public void initialize() {
-        loadDataMakanan(); // Memuat data saat pertama kali controller diinisialisasi
+        loadDataMinuman(); // Memuat data saat pertama kali controller diinisialisasi
         initTable(); // Initialize the table columns with action buttons
     }
     @FXML
@@ -186,12 +186,12 @@ public class FMakanan extends Application {
     }
 
     @FXML
-    private void Minuman() {
+    private void Makanan() {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("FMinuman.fxml"));
-            Stage stage = (Stage) btMinuman.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("FMakanan.fxml"));
+            Stage stage = (Stage) btMakanan.getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Minuman");
+            stage.setTitle("Makanan");
         } catch (Exception e) {
             e.printStackTrace();
         }
