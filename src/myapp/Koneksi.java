@@ -13,23 +13,18 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- *
- * @author MyBook Hype AMD
- */
 public class Koneksi {
 
-    // URL, user dan password database
+   
     private static final String URL = "jdbc:mysql://localhost:3306/db__tugas_pbo";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
-    // metode untuk menulis log ke file
     public static void writeLog(String message) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String timestamp = LocalDateTime.now().format(formatter);
 
-        // kita coba try-catch dua variable hasil instance yaitu fwlog dan pwlog
+        
         try (FileWriter fwlog = new FileWriter("log.txt", true);
                 PrintWriter pwlog = new PrintWriter(fwlog)) {
             pwlog.println(timestamp + " - " + message);
@@ -38,7 +33,7 @@ public class Koneksi {
         }
     }
 
-    // metode untuk membuat koneksi ke database
+    
     public static Connection configDB() {
         Connection mySQLConfig = null;
         try {

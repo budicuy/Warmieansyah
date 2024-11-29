@@ -38,19 +38,19 @@ public class FAbout extends Application {
 
 
 @FXML
-private void handleDashboardButtonAction() {
+private void Dash() {
     try {
         Parent root = FXMLLoader.load(getClass().getResource("FAdmin.fxml"));
         Stage stage = (Stage) btDash.getScene().getWindow();
         stage.setScene(new Scene(root));
-        stage.setTitle("Admin Dashboard");
+        stage.setTitle("Admin");
     } catch (Exception e) {
         e.printStackTrace();
     }
 }
 
 @FXML
-private void handleKeluarButtonAction() {
+private void Keluar() {
     try {
         Parent root = FXMLLoader.load(getClass().getResource("FLogin.fxml"));
         Stage stage = (Stage) btKeluar.getScene().getWindow();
@@ -61,12 +61,12 @@ private void handleKeluarButtonAction() {
     }
 }
 @FXML
-private void handleMenuButtonAction() {
+private void Menu() {
     try {
         Parent root = FXMLLoader.load(getClass().getResource("FMakanan.fxml"));
         Stage stage = (Stage) btMenu.getScene().getWindow();
         stage.setScene(new Scene(root));
-        stage.setTitle("");
+        stage.setTitle("Menu Makanan");
     } catch (Exception e) {
         e.printStackTrace();
     }

@@ -11,10 +11,7 @@ import javafx.stage.Stage;
 public class FAboutCostumer extends Application {
 
     @FXML
-    private Button btMenu;
-
-    @FXML
-    private Button btKeluar;
+    private Button btMenu, btKeluar;
 
     public static void main(String[] args) {
         launch(args);

@@ -21,19 +21,7 @@ import java.sql.Statement;
 public class FMinuman extends Application {
 
     @FXML
-    private Button btMakanan;
-
-    @FXML
-    private Button btTambah;
-
-    @FXML
-    private Button btDash;
-
-    @FXML
-    private Button btAbout;
-
-    @FXML
-    private Button btKeluar;
+    private Button btMakanan, btTambah, btDash, btAbout, btKeluar;
 
     @FXML
     private TableView<Menu_Minuman> tblMinuman;
@@ -59,27 +47,26 @@ public class FMinuman extends Application {
 
     @SuppressWarnings("unused")
     private void initTable() {
-        // Set the cell value factories for the TableView columns
+        
         tblId.setCellValueFactory(new PropertyValueFactory<>("id"));
         tblMenuMinuman.setCellValueFactory(new PropertyValueFactory<>("menu_minuman"));
         tblHarga.setCellValueFactory(new PropertyValueFactory<>("harga"));
 
-        // Editable columns (TableCell)
         tblMenuMinuman.setCellFactory(TextFieldTableCell.forTableColumn());
         tblMenuMinuman.setOnEditCommit(event -> {
             Menu_Minuman minuman = event.getRowValue();
             minuman.setMenu_minuman(event.getNewValue());
-            updateMinuman(minuman); // Update in DB or model
+            updateMinuman(minuman);
         });
 
         tblHarga.setCellFactory(TextFieldTableCell.forTableColumn());
         tblHarga.setOnEditCommit(event -> {
             Menu_Minuman minuman = event.getRowValue();
             minuman.setHarga(event.getNewValue());
-            updateMinuman(minuman); // Update in DB or model
+            updateMinuman(minuman); 
         });
 
-        // Column for Edit and Delete buttons
+        
         TableColumn<Menu_Minuman, Void> actionColumn = new TableColumn<>("Aksi");
 
         actionColumn.setCellFactory(param -> new TableCell<>() {
@@ -120,7 +107,7 @@ public class FMinuman extends Application {
         }
     }
 
-    // Aksi untuk mengupdate minuman setelah diedit
+    
     private void updateMinuman(Menu_Minuman minuman) {
         try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
             String query = "UPDATE minuman SET " +
@@ -133,7 +120,6 @@ public class FMinuman extends Application {
         }
     }
 
-    // Aksi untuk tombol Hapus
     private void handleDelete(Menu_Minuman minuman) {
         if (minuman != null) {
             try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
@@ -148,8 +134,8 @@ public class FMinuman extends Application {
 
     @FXML
     public void initialize() {
-        loadDataMinuman(); // Memuat data saat pertama kali controller diinisialisasi
-        initTable(); // Initialize the table columns with action buttons
+        loadDataMinuman(); 
+        initTable(); 
     }
     @FXML
     private void Keluar() {

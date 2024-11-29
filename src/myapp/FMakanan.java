@@ -21,19 +21,7 @@ import java.sql.Statement;
 public class FMakanan extends Application {
 
     @FXML
-    private Button btMinuman;
-
-    @FXML
-    private Button btTambah;
-
-    @FXML
-    private Button btDash;
-
-    @FXML
-    private Button btAbout;
-
-    @FXML
-    private Button btKeluar;
+    private Button btMinuman, btTambah, btDash, btAbout, btKeluar;
 
     @FXML
     private TableView<Menu_Makanan> tblMakanan;
@@ -59,27 +47,27 @@ public class FMakanan extends Application {
 
     @SuppressWarnings("unused")
     private void initTable() {
-        // Set the cell value factories for the TableView columns
+        
         tblId.setCellValueFactory(new PropertyValueFactory<>("id"));
         tblMenuMakanan.setCellValueFactory(new PropertyValueFactory<>("menu_makanan"));
         tblHarga.setCellValueFactory(new PropertyValueFactory<>("harga"));
 
-        // Editable columns (TableCell)
+        
         tblMenuMakanan.setCellFactory(TextFieldTableCell.forTableColumn());
         tblMenuMakanan.setOnEditCommit(event -> {
             Menu_Makanan makanan = event.getRowValue();
             makanan.setMenu_makanan(event.getNewValue());
-            updateMakanan(makanan); // Update in DB or model
+            updateMakanan(makanan); 
         });
 
         tblHarga.setCellFactory(TextFieldTableCell.forTableColumn());
         tblHarga.setOnEditCommit(event -> {
             Menu_Makanan makanan = event.getRowValue();
             makanan.setHarga(event.getNewValue());
-            updateMakanan(makanan); // Update in DB or model
+            updateMakanan(makanan); 
         });
 
-        // Column for Edit and Delete buttons
+        
         TableColumn<Menu_Makanan, Void> actionColumn = new TableColumn<>("Aksi");
 
         actionColumn.setCellFactory(param -> new TableCell<>() {
@@ -148,8 +136,8 @@ public class FMakanan extends Application {
 
     @FXML
     public void initialize() {
-        loadDataMakanan(); // Memuat data saat pertama kali controller diinisialisasi
-        initTable(); // Initialize the table columns with action buttons
+        loadDataMakanan(); 
+        initTable(); 
     }
     @FXML
     private void Keluar() {

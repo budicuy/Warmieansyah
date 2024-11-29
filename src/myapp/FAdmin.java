@@ -54,13 +54,13 @@ public class FAdmin extends Application {
 
     @FXML
     public void initialize() {
-        loadDataPesanan(); // Load data from the database
-        initTable(); // Initialize table columns and actions
+        loadDataPesanan(); 
+        initTable(); 
     }
 
     @SuppressWarnings("unused")
     private void initTable() {
-        // Configure columns to match fields in Pesanan class
+      
         tblId.setCellValueFactory(new PropertyValueFactory<>("id"));
         tblNama.setCellValueFactory(new PropertyValueFactory<>("nama"));
         tblNoMeja.setCellValueFactory(new PropertyValueFactory<>("noMeja"));
@@ -100,7 +100,7 @@ public class FAdmin extends Application {
             private final HBox detail = new HBox(10, btnDetail);
 
             {
-                btnDelete.setOnAction(event -> handleDelete(getTableRow().getItem()));
+                btnDelete.setOnAction(event -> Delete(getTableRow().getItem()));
             }
 
             {
@@ -165,13 +165,12 @@ public class FAdmin extends Application {
             ps.setInt(4, pesanan.getId());
             ps.executeUpdate();
             loadDataPesanan();
-            System.out.println("Data berhasil diperbarui untuk ID: " + pesanan.getId());
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void handleDelete(Pesanan pesanan) {
+    private void Delete(Pesanan pesanan) {
         if (pesanan != null) {
             String query = "DELETE FROM pesanan WHERE id = ?";
             try (Connection conn = Koneksi.configDB(); PreparedStatement ps = conn.prepareStatement(query)) {
@@ -183,7 +182,6 @@ public class FAdmin extends Application {
                     // Lanjutkan penghapusan
                     ps.executeUpdate();
                     loadDataPesanan();
-                    System.out.println("Data berhasil dihapus untuk ID: " + pesanan.getId());
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -192,7 +190,7 @@ public class FAdmin extends Application {
     }
 
     @FXML
-    private void handleKeluarButtonAction() {
+    private void Keluar() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("FLogin.fxml"));
             Stage stage = (Stage) btKeluar.getScene().getWindow();
@@ -204,7 +202,7 @@ public class FAdmin extends Application {
     }
 
     @FXML
-    private void handleMenuButtonAction() {
+    private void Menu() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("FMakanan.fxml"));
             Stage stage = (Stage) btMenu.getScene().getWindow();
@@ -216,7 +214,7 @@ public class FAdmin extends Application {
     }
 
     @FXML
-    private void handleAboutButtonAction() {
+    private void About() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("FAbout.fxml"));
             Stage stage = (Stage) btAbout.getScene().getWindow();

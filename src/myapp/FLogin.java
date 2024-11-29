@@ -19,17 +19,17 @@ public class FLogin {
     private Button btnLogin;
 
     @FXML
-    private TextField tfName;
+    private TextField txtUsername;
 
     @FXML
-    private PasswordField tfPassword;
+    private PasswordField txtPassword;
 
     @FXML
     private void login() {
 
         // ambil username dan password dari textfield
-        String username = tfName.getText();
-        String password = tfPassword.getText();
+        String username = txtUsername.getText();
+        String password = txtPassword.getText();
         String query = "SELECT * FROM user WHERE name = '" + username + "' AND password = '" + password + "'";
 
         try {
@@ -45,7 +45,6 @@ public class FLogin {
                     // tampilkan dialog login berhasil
                     JOptionPane.showMessageDialog(null, "Login berhasil sebagai admin");
                     // print info login berhasil
-                    System.out.println("Login berhasil sebagai admin");
 
                     // buka scene admin
                     FAdmin admin = new FAdmin();
@@ -57,14 +56,12 @@ public class FLogin {
                     // tampilkan dialog login berhasil
                     JOptionPane.showMessageDialog(null, "Login berhasil sebagai user");
                     // print info login berhasil
-                    System.out.println("Login berhasil sebagai user");
-
                     // buka scene user
                     Parent root = FXMLLoader.load(getClass().getResource("FCostumer.fxml"));
                     Stage stage = new Stage();
                     stage.setScene(new Scene(root));
+                    stage.setTitle("Costumer");
                     stage.show();
-                    // tutup scene login
                     Stage currentStage = (Stage) btnLogin.getScene().getWindow();
                     currentStage.close();
                 }
@@ -96,6 +93,7 @@ public class FLogin {
             Parent root = FXMLLoader.load(getClass().getResource("FLogin.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.setTitle("Login");
             stage.show();
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());

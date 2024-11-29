@@ -13,9 +13,9 @@
             <Image url="@img/About.png" />
          </image>
       </ImageView>
-      <Button fx:id="btDash" layoutX="-3.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleDashboardButtonAction" opacity="0.0" prefHeight="64.0" prefWidth="74.0" text="Button" />
-      <Button fx:id="btMenu" layoutY="142.0" mnemonicParsing="false" onAction="#handleMenuButtonAction" opacity="0.0" prefHeight="64.0" prefWidth="74.0" text="Button" />
-      <Button fx:id="btKeluar" layoutX="11.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleKeluarButtonAction" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+      <Button fx:id="btDash" layoutX="-3.0" layoutY="78.0" mnemonicParsing="false" onAction="#Dash" opacity="0.0" prefHeight="64.0" prefWidth="74.0" text="Button" />
+      <Button fx:id="btMenu" layoutY="142.0" mnemonicParsing="false" onAction="#Menu" opacity="0.0" prefHeight="64.0" prefWidth="74.0" text="Button" />
+      <Button fx:id="btKeluar" layoutX="11.0" layoutY="363.0" mnemonicParsing="false" onAction="#Keluar" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
          <font>
             <Font size="6.0" />
          </font>

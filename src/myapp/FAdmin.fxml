@@ -14,9 +14,9 @@
             <Image url="@img/Dashboard%20(1).png" />
          </image>
       </ImageView>
-      <Button fx:id="btMenu" layoutX="-4.0" layoutY="142.0" mnemonicParsing="false" onAction="#handleMenuButtonAction" prefHeight="45.0" prefWidth="80.0" style="-fx-opacity: 0;" text="Button" />
-      <Button fx:id="btAbout" layoutX="-2.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleAboutButtonAction" prefHeight="46.0" prefWidth="80.0" style="-fx-opacity: 0;" text="Button" />
-      <Button fx:id="btKeluar" layoutX="7.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleKeluarButtonAction" prefHeight="26.0" prefWidth="62.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="btMenu" layoutX="-2.0" layoutY="145.0" mnemonicParsing="false" onAction="#Menu" prefHeight="55.0" prefWidth="80.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="btAbout" layoutX="-2.0" layoutY="213.0" mnemonicParsing="false" onAction="#About" prefHeight="46.0" prefWidth="80.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="btKeluar" layoutX="7.0" layoutY="364.0" mnemonicParsing="false" onAction="#Keluar" prefHeight="26.0" prefWidth="62.0" style="-fx-opacity: 0;" text="Button" />
       <TableView fx:id="tblPesanan" editable="true" layoutX="104.0" layoutY="100.0" prefHeight="278.0" prefWidth="638.0" styleClass="co">
         <columns>
           <TableColumn fx:id="tblId" prefWidth="35.20001220703125" text="NO" />

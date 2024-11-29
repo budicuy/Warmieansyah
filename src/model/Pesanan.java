@@ -21,7 +21,7 @@ public class Pesanan {
         this.totalHarga = totalHarga;
     }
 
-    // Getters and Setters
+    
     public int getId() {
         return id;
     }

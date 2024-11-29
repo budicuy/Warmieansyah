@@ -3,16 +3,15 @@ package model;
 public class Menu_Makanan {
     private int id;
     private String menu_makanan;
-    private String harga; // Ubah "Harga" menjadi "harga"
+    private String harga;
 
-    // Constructor
     public Menu_Makanan(int id, String menu_makanan, String harga) {
         this.id = id;
         this.menu_makanan = menu_makanan;
-        this.harga = harga; // Ubah ke huruf kecil
+        this.harga = harga;
     }
 
-    // Getters and Setters
+   
     public int getId() {
         return id;
     }
@@ -30,10 +29,10 @@ public class Menu_Makanan {
     }
 
     public String getHarga() {
-        return harga; // Ubah ke huruf kecil
+        return harga; 
     }
 
     public void setHarga(String harga) {
-        this.harga = harga; // Ubah ke huruf kecil
+        this.harga = harga; 
     }
 }

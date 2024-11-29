@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package myapp;
 
 import javafx.application.Application;
@@ -15,7 +12,7 @@ import javafx.stage.Stage;
  * @author MyBook Hype AMD
  */
 
-// mainscene.fxml path is src/resource/mainscene.fxml
+
 public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {

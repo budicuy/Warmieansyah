@@ -5,14 +5,14 @@ public class Menu_Minuman {
     private String menu_minuman;
     private String harga;
 
-    // Constructor
+   
     public Menu_Minuman(int id, String menu_minuman, String harga) {
         this.id = id;
         this.menu_minuman = menu_minuman;
         this.harga = harga;
     }
 
-    // Getters and Setters
+   
     public int getId() {
         return id;
     }
