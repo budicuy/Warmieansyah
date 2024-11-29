@@ -1049,3 +1049,187 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
 2024-11-29 14:00:01 - Berhasil membuat koneksi ke database
 2024-11-29 14:00:04 - Berhasil membuat koneksi ke database
+2024-11-29 15:27:44 - Berhasil membuat koneksi ke database
+2024-11-29 15:27:57 - Berhasil membuat koneksi ke database
+2024-11-29 15:28:24 - Berhasil membuat koneksi ke database
+2024-11-29 15:28:25 - Berhasil membuat koneksi ke database
+2024-11-29 15:28:29 - Berhasil membuat koneksi ke database
+2024-11-29 15:28:30 - Berhasil membuat koneksi ke database
+2024-11-29 15:28:31 - Berhasil membuat koneksi ke database
+2024-11-29 15:29:56 - Berhasil membuat koneksi ke database
+2024-11-29 15:29:59 - Berhasil membuat koneksi ke database
+2024-11-29 15:30:01 - Berhasil membuat koneksi ke database
+2024-11-29 15:30:06 - Berhasil membuat koneksi ke database
+2024-11-29 15:34:39 - Berhasil membuat koneksi ke database
+2024-11-29 15:34:40 - Berhasil membuat koneksi ke database
+2024-11-29 15:34:40 - Berhasil membuat koneksi ke database
+2024-11-29 15:34:41 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:11 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:16 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:19 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:22 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:27 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:35 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:44 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:51:58 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:03 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:18 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:26 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:28 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:36 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:45 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:47 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:53 - Berhasil membuat koneksi ke database
+2024-11-29 16:52:55 - Berhasil membuat koneksi ke database
+2024-11-29 16:53:00 - Berhasil membuat koneksi ke database
+2024-11-29 16:56:25 - Berhasil membuat koneksi ke database
+2024-11-29 16:56:26 - Berhasil membuat koneksi ke database
+2024-11-29 17:46:11 - Berhasil membuat koneksi ke database
+2024-11-29 17:46:19 - Berhasil membuat koneksi ke database
+2024-11-29 17:46:20 - Berhasil membuat koneksi ke database
+2024-11-29 17:46:32 - Berhasil membuat koneksi ke database
+2024-11-29 17:46:42 - Berhasil membuat koneksi ke database
+2024-11-29 17:46:47 - Berhasil membuat koneksi ke database
+2024-11-29 17:46:48 - Berhasil membuat koneksi ke database
+2024-11-29 17:46:51 - Berhasil membuat koneksi ke database
+2024-11-29 17:47:03 - Berhasil membuat koneksi ke database
+2024-11-29 17:47:06 - Berhasil membuat koneksi ke database
+2024-11-29 17:47:08 - Berhasil membuat koneksi ke database
+2024-11-29 17:47:19 - Berhasil membuat koneksi ke database
+2024-11-29 17:47:21 - Berhasil membuat koneksi ke database
+2024-11-29 17:47:26 - Berhasil membuat koneksi ke database
+2024-11-29 17:47:32 - Berhasil membuat koneksi ke database
+2024-11-29 17:47:45 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:01 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:07 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:10 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:18 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:28 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:28 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:28 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:28 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:28 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:28 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:28 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:28 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:31 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:33 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:38 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:46 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:54 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:58 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:58 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:58 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:58 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:58 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:58 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:58 - Berhasil membuat koneksi ke database
+2024-11-29 17:48:58 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:05 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:13 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:13 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:13 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:13 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:13 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:13 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:13 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:13 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:15 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:26 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:36 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:39 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:50 - Berhasil membuat koneksi ke database
+2024-11-29 17:49:56 - Berhasil membuat koneksi ke database
+2024-11-29 17:50:12 - Berhasil membuat koneksi ke database
+2024-11-29 17:51:12 - Berhasil membuat koneksi ke database
+2024-11-29 17:54:07 - Berhasil membuat koneksi ke database
+2024-11-29 17:54:26 - Berhasil membuat koneksi ke database
+2024-11-29 17:54:29 - Berhasil membuat koneksi ke database
+2024-11-29 17:56:39 - Berhasil membuat koneksi ke database
+2024-11-29 17:56:43 - Berhasil membuat koneksi ke database
+2024-11-29 17:57:39 - Berhasil membuat koneksi ke database
+2024-11-29 17:57:54 - Berhasil membuat koneksi ke database
+2024-11-29 18:27:57 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-29 18:27:57 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-29 18:27:57 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-29 18:27:58 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-29 18:27:58 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-29 18:27:58 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-29 18:27:58 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-29 18:27:58 - Gagal membuat koneksi ke database Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-29 18:50:02 - Berhasil membuat koneksi ke database
+2024-11-29 18:50:11 - Berhasil membuat koneksi ke database
+2024-11-29 18:51:07 - Berhasil membuat koneksi ke database
+2024-11-29 19:00:29 - Berhasil membuat koneksi ke database
+2024-11-29 19:00:33 - Berhasil membuat koneksi ke database
+2024-11-29 19:00:38 - Berhasil membuat koneksi ke database
+2024-11-29 19:00:49 - Berhasil membuat koneksi ke database
+2024-11-29 19:00:59 - Berhasil membuat koneksi ke database
+2024-11-29 19:01:12 - Berhasil membuat koneksi ke database
+2024-11-29 19:01:28 - Berhasil membuat koneksi ke database
+2024-11-29 19:01:29 - Berhasil membuat koneksi ke database
+2024-11-29 19:01:32 - Berhasil membuat koneksi ke database
+2024-11-29 19:01:33 - Berhasil membuat koneksi ke database
+2024-11-29 19:01:34 - Berhasil membuat koneksi ke database
+2024-11-29 19:01:36 - Berhasil membuat koneksi ke database
+2024-11-29 19:01:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:04:23 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:37 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:39 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:40 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:43 - Berhasil membuat koneksi ke database
+2024-11-29 19:06:51 - Berhasil membuat koneksi ke database
