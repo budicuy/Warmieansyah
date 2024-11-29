@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 28 Nov 2024 pada 01.36
+-- Waktu pembuatan: 29 Nov 2024 pada 01.51
 -- Versi server: 8.0.30
 -- Versi PHP: 8.1.10
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db__tugas_pbo`
+-- Database: `db_tugas_pbo`
 --
 
 -- --------------------------------------------------------
@@ -38,11 +38,11 @@ CREATE TABLE `makanan` (
 --
 
 INSERT INTO `makanan` (`id`, `menu_makanan`, `harga`) VALUES
-(15, 'Sakura Soto 4K', 4000.00),
-(16, 'Sakura Goreng 4K', 4000.00),
-(17, 'Indomie Goreng 6K', 6000.00),
-(18, 'Indomie Rendang 6K', 6000.00),
-(19, 'Indomie Goreng Aceh 6K', 6000.00),
+(15, 'Sakura Soto ', 4000.00),
+(16, 'Sakura Goreng ', 4000.00),
+(17, 'Indomie Goreng ', 6000.00),
+(18, 'Indomie Rendang ', 6000.00),
+(19, 'Indomie Goreng Aceh ', 6000.00),
 (20, 'Indomie Seblak Jeletot', 7000.00),
 (21, 'Indomie Kaldu Ayam', 6000.00),
 (22, 'Sedap Goreng', 6000.00),
@@ -126,7 +126,17 @@ INSERT INTO `pesanan` (`id`, `nama`, `no_meja`, `tanggal_pesan`, `menu_makanan`,
 (7, NULL, 0, '2024-11-28', '', 'Minuman 2', 5000.00),
 (8, NULL, 0, '2024-11-28', '', 'Minuman 4', 6000.00),
 (9, NULL, 0, '2024-11-28', '', 'Minuman 1, Minuman 2', 11000.00),
-(10, 'ada', 1, '2024-11-28', '', 'Minuman 2', 5000.00);
+(10, 'ada', 1, '2024-11-28', '', 'Minuman 2', 5000.00),
+(11, 'adsad', 2, '2024-11-28', '', 'Minuman 4, Minuman 4, Minuman 4', 18000.00),
+(12, 'adskask', 9, '2024-11-28', '', 'Minuman 2, Minuman 1, Minuman 3', 15000.00),
+(13, 'Aditya', 77, '2024-11-29', 'Mie Indomie, Mie Seddap, Mie Indomie Soto Banjar, Mie Seddap Soto', '', 21000.00),
+(14, 'Aditya', 9, '2024-11-29', 'Mie Seddap, Mie Indomie', 'Cappucino, Americano', 21000.00),
+(15, 'kelompok', 1, '2024-11-29', 'Mie Seddap, Mie Indomie', 'Cappucino, Lemon Tea', 22000.00),
+(16, '12', 12, '2024-11-29', 'Mie Indomie Soto Banjar, Mie Seddap Soto', 'Lemon Tea, Strawberry Milk', 24000.00),
+(17, '12', 1, '2024-11-29', 'Mie Seddap Soto, Mie Sarimi Ayam Kremes', 'Ice Tea', 16500.00),
+(18, '1', 2, '2024-11-29', 'Mie Indomie Soto Banjar, Mie Seddap Soto', 'Lemon Tea, Strawberry Milk', 24000.00),
+(20, 'fff', 2, '2024-11-29', 'Mie Seddap, Mie Indomie', 'Ice Tea, Strawberry Milk', 21000.00),
+(21, 'Kelompok 1', 1, '2024-11-29', 'Mie Seddap, Mie Sarimi Ayam Kremes, Mie Indomie', 'Americano', 22000.00);
 
 -- --------------------------------------------------------
 
@@ -186,19 +196,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `makanan`
 --
 ALTER TABLE `makanan`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT untuk tabel `minuman`
 --
 ALTER TABLE `minuman`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT untuk tabel `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`

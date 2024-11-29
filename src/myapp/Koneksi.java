@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
 public class Koneksi {
 
    
-    private static final String URL = "jdbc:mysql://localhost:3306/db__tugas_pbo";
+    private static final String URL = "jdbc:mysql://localhost:3306/db_tugas_pbo";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
