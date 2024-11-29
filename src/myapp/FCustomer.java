@@ -33,7 +33,7 @@ public class FCustomer extends Application {
 
     private Label[] lblHargaArray;
     private Label[] lblItemArray;
-    
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -53,53 +53,29 @@ public class FCustomer extends Application {
     @FXML
     private void initialize() {
         // Inisialisasi array label harga dan item
-        lblHargaArray = new Label[]{lblHarga1, lblHarga2, lblHarga3, lblHarga4};
-        lblItemArray = new Label[]{lblItem1, lblItem2, lblItem3, lblItem4};
+        lblHargaArray = new Label[] { lblHarga1, lblHarga2, lblHarga3, lblHarga4 };
+        lblItemArray = new Label[] { lblItem1, lblItem2, lblItem3, lblItem4 };
     }
 
-    @FXML
-    private void About() {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("FAboutCostumer.fxml"));
-            Stage stage = (Stage) btAbout.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("About");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    private void Keluar() {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("FLogin.fxml"));
-            Stage stage = (Stage) btKeluar.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Login");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void addItemAndPriceToNextAvailableLabel(String item, String harga) {
+    private void MakanandanMinuman(String item, String harga) {
         for (int i = 0; i < lblItemArray.length; i++) {
             if (lblItemArray[i].getText().isEmpty()) {
-                lblItemArray[i].setText(item);   
-                lblHargaArray[i].setText(harga);  
-                calculateTotalHarga();            
+                lblItemArray[i].setText(item);
+                lblHargaArray[i].setText(harga);
+                TotalHarga();
                 break;
             }
         }
     }
 
-    private void calculateTotalHarga() {
+    private void TotalHarga() {
         int totalHarga = 0;
         for (Label lblHarga : lblHargaArray) {
             if (!lblHarga.getText().isEmpty()) {
                 totalHarga += Integer.parseInt(lblHarga.getText());
             }
         }
-        lblTotalHarga.setText(String.valueOf(totalHarga)); 
+        lblTotalHarga.setText(String.valueOf(totalHarga));
     }
 
     @FXML
@@ -120,62 +96,62 @@ public class FCustomer extends Application {
     // Fungsi untuk menambah makanan dan minuman
     @FXML
     private void TambahMakanan1() {
-        addItemAndPriceToNextAvailableLabel("Makanan 1", "5000");
+        MakanandanMinuman("Mie Seddap", "5000");
     }
 
     @FXML
     private void TambahMakanan2() {
-        addItemAndPriceToNextAvailableLabel("Makanan 2", "5000");
+        MakanandanMinuman("Mie Indomie", "5000");
     }
 
     @FXML
     private void TambahMakanan3() {
-        addItemAndPriceToNextAvailableLabel("Makanan 3", "5500");
+        MakanandanMinuman("Mie Indomie Soto Banjar", "5500");
     }
 
     @FXML
     private void TambahMakanan4() {
-        addItemAndPriceToNextAvailableLabel("Makanan 4", "5500");
+        MakanandanMinuman("Mie Seddap Soto", "5500");
     }
 
     @FXML
     private void TambahMakanan5() {
-        addItemAndPriceToNextAvailableLabel("Makanan 5", "7000");
+        MakanandanMinuman("Mie Sukses Ayam Kecap", "7000");
     }
 
     @FXML
     private void TambahMakanan6() {
-        addItemAndPriceToNextAvailableLabel("Makanan 6", "7000");
+        MakanandanMinuman("Mie Sarimi Ayam Kremes", "7000");
     }
 
     @FXML
     private void TambahMinuman1() {
-        addItemAndPriceToNextAvailableLabel("Minuman 1", "6000");
+        MakanandanMinuman("Cappucino", "6000");
     }
 
     @FXML
     private void TambahMinuman2() {
-        addItemAndPriceToNextAvailableLabel("Minuman 2", "5000");
+        MakanandanMinuman("Americano", "5000");
     }
 
     @FXML
     private void TambahMinuman3() {
-        addItemAndPriceToNextAvailableLabel("Minuman 3", "4000");
+        MakanandanMinuman("Ice Tea", "4000");
     }
 
     @FXML
     private void TambahMinuman4() {
-        addItemAndPriceToNextAvailableLabel("Minuman 4", "6000");
+        MakanandanMinuman("Lemon Tea", "6000");
     }
 
     @FXML
     private void TambahMinuman5() {
-        addItemAndPriceToNextAvailableLabel("Minuman 5", "6000");
+        MakanandanMinuman("Red Syrup", "6000");
     }
 
     @FXML
     private void TambahMinuman6() {
-        addItemAndPriceToNextAvailableLabel("Minuman 6", "7000");
+        MakanandanMinuman("Strawberry Milk", "7000");
     }
 
     @FXML
@@ -213,22 +189,23 @@ public class FCustomer extends Application {
         }
 
         // Mengambil data dari label item dan harga
-        String[] items = {lblItem1.getText(), lblItem2.getText(), lblItem3.getText(), lblItem4.getText()};
-        String[] prices = {lblHarga1.getText(), lblHarga2.getText(), lblHarga3.getText(), lblHarga4.getText()};
+        String[] items = { lblItem1.getText(), lblItem2.getText(), lblItem3.getText(), lblItem4.getText() };
+        String[] prices = { lblHarga1.getText(), lblHarga2.getText(), lblHarga3.getText(), lblHarga4.getText() };
 
         String tanggalPesanan = java.time.LocalDate.now().toString();
 
-        // Gabungkan item makanan dan minuman
         StringBuilder menuMakanan = new StringBuilder();
         StringBuilder menuMinuman = new StringBuilder();
 
         for (int i = 0; i < items.length; i++) {
             if (!items[i].isEmpty() && !prices[i].isEmpty()) {
-                if (items[i].contains("Makanan")) {
-                    if (menuMakanan.length() > 0) menuMakanan.append(", ");
+                if (items[i].contains("Mie")) {
+                    if (menuMakanan.length() > 0)
+                        menuMakanan.append(", ");
                     menuMakanan.append(items[i]);
-                } else if (items[i].contains("Minuman")) {
-                    if (menuMinuman.length() > 0) menuMinuman.append(", ");
+                } else {
+                    if (menuMinuman.length() > 0)
+                        menuMinuman.append(", ");
                     menuMinuman.append(items[i]);
                 }
             }
@@ -242,7 +219,6 @@ public class FCustomer extends Application {
             }
         }
 
-        // Koneksi ke database
         try (Connection conn = Koneksi.configDB()) {
             String sql = "INSERT INTO pesanan (nama, no_meja, tanggal_pesan, menu_makanan, menu_minuman, total_harga) VALUES (?, ?, ?, ?, ?, ?)";
             try (PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -255,20 +231,42 @@ public class FCustomer extends Application {
                 stmt.executeUpdate();
             }
 
-            // Konfirmasi pesanan berhasil
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Pesanan Berhasil");
             alert.setHeaderText(null);
             alert.setContentText("Pesanan Anda telah diterima.");
             alert.showAndWait();
-
-            Clear();  // Bersihkan tampilan setelah order
+            Clear();
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Kesalahan");
             alert.setHeaderText("Terjadi kesalahan saat memproses pesanan.");
             alert.setContentText(e.getMessage());
             alert.showAndWait();
+        }
+    }
+
+    @FXML
+    private void About() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FAboutCostumer.fxml"));
+            Stage stage = (Stage) btAbout.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("About");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void Keluar() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FLogin.fxml"));
+            Stage stage = (Stage) btKeluar.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Login");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

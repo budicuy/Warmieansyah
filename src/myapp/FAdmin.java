@@ -107,7 +107,7 @@ public class FAdmin extends Application {
                 btnDetail.setOnAction(event -> {
                     Pesanan pesanan = getTableRow().getItem();
                     if (pesanan != null) {
-                        FDetailPesanan.setSelectedPesanan(pesanan); // Kirim data pesanan ke FDetailPesanan
+                        FDetailPesanan.Pesan(pesanan);
                         try {
                             Parent root = FXMLLoader.load(getClass().getResource("FDetailPesanan.fxml"));
                             Stage stage = (Stage) btnDetail.getScene().getWindow();
