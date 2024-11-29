@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myapp.FLainnya">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="768.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Order%20lainnya.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btOrder" layoutX="519.0" layoutY="331.0" mnemonicParsing="false" onAction="#Order" prefHeight="30.0" prefWidth="78.0" style="-fx-opacity: 0%;" text="Button">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Button>
+      <Button fx:id="btAbout" layoutY="145.0" mnemonicParsing="false" onAction="#About" prefHeight="59.0" prefWidth="71.0" style="-fx-opacity: 0%;" text="Button">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNama" layoutX="597.0" layoutY="85.0" prefHeight="15.0" prefWidth="136.0" style="-fx-background-color: FFFFFFF;" />
+      <TextField fx:id="txtMeja" layoutX="597.0" layoutY="113.0" prefHeight="15.0" prefWidth="136.0" style="-fx-background-color: FFFFFFF;" />
+      <Button fx:id="btKeluar" layoutX="10.0" layoutY="365.0" mnemonicParsing="false" onAction="#Keluar" prefHeight="22.0" prefWidth="52.0" style="-fx-opacity: 0%;" text="Button">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblItem1" layoutX="523.0" layoutY="179.0" prefHeight="18.0" prefWidth="110.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem2" layoutX="523.0" layoutY="203.0" prefHeight="18.0" prefWidth="110.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem3" layoutX="523.0" layoutY="228.0" prefHeight="18.0" prefWidth="110.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem4" layoutX="523.0" layoutY="256.0" prefHeight="18.0" prefWidth="110.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHarga1" layoutX="643.0" layoutY="179.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHarga2" layoutX="643.0" layoutY="203.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHarga3" layoutX="643.0" layoutY="227.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHarga4" layoutX="643.0" layoutY="256.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalHarga" layoutX="631.0" layoutY="298.0" prefHeight="18.0" prefWidth="99.0">
+         <font>
+            <Font name="Inter Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btClear" layoutX="649.0" layoutY="332.0" mnemonicParsing="false" onAction="#Clear" prefHeight="30.0" prefWidth="78.0" style="-fx-opacity: 0%;" text="Button">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Button>
+      <Button fx:id="btKembali" layoutX="384.0" layoutY="47.0" mnemonicParsing="false" onAction="#Kembali" prefHeight="30.0" prefWidth="78.0" style="-fx-opacity: 0%;" text="Button">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cbMakanan1" layoutX="95.0" layoutY="125.0"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #458DFF;" promptText="Pilih Makanan"/>
+      <ComboBox fx:id="cbMakanan2" layoutX="95.0" layoutY="174.0"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #458DFF;"  promptText="Pilih Makanan"/>
+      <ComboBox fx:id="cbMakanan3" layoutX="95.0" layoutY="222.0"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #458DFF;"  promptText="Pilih Makanan"/>
+      <ComboBox fx:id="cbMakanan4" layoutX="95.0" layoutY="267.0"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #458DFF;"  promptText="Pilih Makanan"/>
+      <ComboBox fx:id="cbMinuman1" layoutX="296.0" layoutY="125.0" nodeOrientation="RIGHT_TO_LEFT"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #FFC23A;" promptText="Pilih Minuman" />
+      <ComboBox fx:id="cbMinuman2" layoutX="296.0" layoutY="172.0" nodeOrientation="RIGHT_TO_LEFT"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #FFC23A;"  promptText="Pilih Minuman"/>
+      <ComboBox fx:id="cbMinuman3" layoutX="296.0" layoutY="220.0" nodeOrientation="RIGHT_TO_LEFT"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #FFC23A;"  promptText="Pilih Minuman"/>
+      <ComboBox fx:id="cbMinuman4" layoutX="295.0" layoutY="266.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #FFC23A;"  promptText="Pilih Minuman"/>
+   </children>
+</AnchorPane>

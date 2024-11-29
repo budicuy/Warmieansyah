@@ -19,7 +19,7 @@ public class FCustomer extends Application {
     @FXML
     private Button btTambahMinuman3, btTambahMinuman4, btTambahMinuman5, btTambahMinuman6;
     @FXML
-    private Button btAbout, btKeluar, btOrder;
+    private Button btAbout, btKeluar, btOrder, btLainnya;
     @FXML
     private Label lblItem1, lblItem2, lblItem3, lblItem4;
     @FXML
@@ -265,6 +265,18 @@ public class FCustomer extends Application {
             Stage stage = (Stage) btKeluar.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Login");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void Lainnya() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FLainnya.fxml"));
+            Stage stage = (Stage) btLainnya.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Lainnya");
         } catch (Exception e) {
             e.printStackTrace();
         }
