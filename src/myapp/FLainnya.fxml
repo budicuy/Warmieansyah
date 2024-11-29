@@ -88,13 +88,13 @@
             <Font size="6.0" />
          </font>
       </Button>
-      <ComboBox fx:id="cbMakanan1" layoutX="95.0" layoutY="125.0"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #458DFF;" promptText="Pilih Makanan"/>
-      <ComboBox fx:id="cbMakanan2" layoutX="95.0" layoutY="174.0"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #458DFF;"  promptText="Pilih Makanan"/>
-      <ComboBox fx:id="cbMakanan3" layoutX="95.0" layoutY="222.0"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #458DFF;"  promptText="Pilih Makanan"/>
-      <ComboBox fx:id="cbMakanan4" layoutX="95.0" layoutY="267.0"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #458DFF;"  promptText="Pilih Makanan"/>
-      <ComboBox fx:id="cbMinuman1" layoutX="296.0" layoutY="125.0" nodeOrientation="RIGHT_TO_LEFT"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #FFC23A;" promptText="Pilih Minuman" />
-      <ComboBox fx:id="cbMinuman2" layoutX="296.0" layoutY="172.0" nodeOrientation="RIGHT_TO_LEFT"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #FFC23A;"  promptText="Pilih Minuman"/>
-      <ComboBox fx:id="cbMinuman3" layoutX="296.0" layoutY="220.0" nodeOrientation="RIGHT_TO_LEFT"  prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #FFC23A;"  promptText="Pilih Minuman"/>
-      <ComboBox fx:id="cbMinuman4" layoutX="295.0" layoutY="266.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: #FFC23A;"  promptText="Pilih Minuman"/>
+      <ComboBox fx:id="cbMakanan1" layoutX="95.0" layoutY="125.0" prefHeight="26.0" prefWidth="192.0" promptText="Pilih Makanan" style="-fx-background-color: #458DFF;" />
+      <ComboBox fx:id="cbMakanan2" layoutX="95.0" layoutY="174.0" prefHeight="26.0" prefWidth="192.0" promptText="Pilih Makanan" style="-fx-background-color: #458DFF;" />
+      <ComboBox fx:id="cbMakanan3" layoutX="95.0" layoutY="222.0" prefHeight="26.0" prefWidth="192.0" promptText="Pilih Makanan" style="-fx-background-color: #458DFF;" />
+      <ComboBox fx:id="cbMakanan4" layoutX="95.0" layoutY="267.0" prefHeight="26.0" prefWidth="192.0" promptText="Pilih Makanan" style="-fx-background-color: #458DFF;" />
+      <ComboBox fx:id="cbMinuman1" layoutX="296.0" layoutY="125.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="192.0" promptText="Pilih Minuman" style="-fx-background-color: #FFC23A;" />
+      <ComboBox fx:id="cbMinuman2" layoutX="296.0" layoutY="172.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="192.0" promptText="Pilih Minuman" style="-fx-background-color: #FFC23A;" />
+      <ComboBox fx:id="cbMinuman3" layoutX="296.0" layoutY="220.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="192.0" promptText="Pilih Minuman" style="-fx-background-color: #FFC23A;" />
+      <ComboBox fx:id="cbMinuman4" layoutX="295.0" layoutY="266.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="192.0" promptText="Pilih Minuman" style="-fx-background-color: #FFC23A;" />
    </children>
 </AnchorPane>

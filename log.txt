@@ -1039,3 +1039,13 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-29 13:57:53 - Berhasil membuat koneksi ke database
 2024-11-29 13:57:53 - Berhasil membuat koneksi ke database
 2024-11-29 13:58:42 - Berhasil membuat koneksi ke database
+2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
+2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
+2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
+2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
+2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
+2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
+2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
+2024-11-29 13:59:35 - Berhasil membuat koneksi ke database
+2024-11-29 14:00:01 - Berhasil membuat koneksi ke database
+2024-11-29 14:00:04 - Berhasil membuat koneksi ke database
