@@ -86,7 +86,7 @@ public class FDetailPesanan extends Application {
 
     private void loadPesananDetails(int pesananId) {
         String sql = "SELECT * FROM pesanan WHERE id = ?";
-        try (Connection conn = Koneksi.configDB();
+        try (Connection conn = Config.configDB();
                 PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setInt(1, pesananId);

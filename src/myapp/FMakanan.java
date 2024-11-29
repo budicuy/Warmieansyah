@@ -94,7 +94,7 @@ public class FMakanan extends Application {
 
     private void loadDataMakanan() {
         ObservableList<Menu_Makanan> makananList = FXCollections.observableArrayList();
-        try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
+        try (Connection conn = Config.configDB(); Statement st = conn.createStatement()) {
             ResultSet rs = st.executeQuery("SELECT * FROM makanan");
             while (rs.next()) {
                 makananList.add(new Menu_Makanan(
@@ -110,7 +110,7 @@ public class FMakanan extends Application {
 
     // Aksi untuk mengupdate makanan setelah diedit
     private void updateMakanan(Menu_Makanan makanan) {
-        try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
+        try (Connection conn = Config.configDB(); Statement st = conn.createStatement()) {
             String query = "UPDATE makanan SET " +
                     "menu_makanan = '" + makanan.getMenu_makanan() + "', " +
                     "harga = '" + makanan.getHarga() + "' " +
@@ -124,7 +124,7 @@ public class FMakanan extends Application {
     // Aksi untuk tombol Hapus
     private void handleDelete(Menu_Makanan makanan) {
         if (makanan != null) {
-            try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
+            try (Connection conn = Config.configDB(); Statement st = conn.createStatement()) {
                 String query = "DELETE FROM makanan WHERE id = " + makanan.getId();
                 st.executeUpdate(query);
                 loadDataMakanan(); // Refresh data setelah menghapus

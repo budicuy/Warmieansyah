@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Koneksi {
+public class Config {
 
    
     private static final String URL = "jdbc:mysql://localhost:3306/db_tugas_pbo";

@@ -219,7 +219,7 @@ public class FCustomer extends Application {
             }
         }
 
-        try (Connection conn = Koneksi.configDB()) {
+        try (Connection conn = Config.configDB()) {
             String sql = "INSERT INTO pesanan (nama, no_meja, tanggal_pesan, menu_makanan, menu_minuman, total_harga) VALUES (?, ?, ?, ?, ?, ?)";
             try (PreparedStatement stmt = conn.prepareStatement(sql)) {
                 stmt.setString(1, namaPesanan);

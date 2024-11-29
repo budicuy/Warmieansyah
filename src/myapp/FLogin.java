@@ -33,7 +33,7 @@ public class FLogin {
         String query = "SELECT * FROM user WHERE name = '" + username + "' AND password = '" + password + "'";
 
         try {
-            Connection conn = Koneksi.configDB();
+            Connection conn = Config.configDB();
             java.sql.Statement stm = conn.createStatement();
             java.sql.ResultSet res = stm.executeQuery(query);
 

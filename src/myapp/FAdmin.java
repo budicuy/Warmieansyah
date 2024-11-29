@@ -138,7 +138,7 @@ public class FAdmin extends Application {
 
     private void loadDataPesanan() {
         ObservableList<Pesanan> pesananList = FXCollections.observableArrayList();
-        try (Connection conn = Koneksi.configDB(); Statement st = conn.createStatement()) {
+        try (Connection conn = Config.configDB(); Statement st = conn.createStatement()) {
             ResultSet rs = st.executeQuery("SELECT * FROM pesanan");
             while (rs.next()) {
                 pesananList.add(new Pesanan(
@@ -158,7 +158,7 @@ public class FAdmin extends Application {
 
     private void updatePesanan(Pesanan pesanan) {
         String query = "UPDATE pesanan SET menu_makanan = ?, menu_minuman = ?, total_harga = ? WHERE id = ?";
-        try (Connection conn = Koneksi.configDB(); PreparedStatement ps = conn.prepareStatement(query)) {
+        try (Connection conn = Config.configDB(); PreparedStatement ps = conn.prepareStatement(query)) {
             ps.setString(1, pesanan.getMenuMakanan());
             ps.setString(2, pesanan.getMenuMinuman());
             ps.setString(3, pesanan.getTotalHarga());
@@ -173,7 +173,7 @@ public class FAdmin extends Application {
     private void Delete(Pesanan pesanan) {
         if (pesanan != null) {
             String query = "DELETE FROM pesanan WHERE id = ?";
-            try (Connection conn = Koneksi.configDB(); PreparedStatement ps = conn.prepareStatement(query)) {
+            try (Connection conn = Config.configDB(); PreparedStatement ps = conn.prepareStatement(query)) {
                 ps.setInt(1, pesanan.getId());
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Yakin ingin menghapus pesanan ini?",
                         ButtonType.YES, ButtonType.NO);

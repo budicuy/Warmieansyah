@@ -43,7 +43,7 @@ public class FTambahMakanan extends Application {
         String harga = txtHarga.getText();
         String query = "INSERT INTO makanan (menu_makanan, harga) VALUES ('" + menuMakanan + "', '" + harga + "')";
         try {
-            Connection conn = Koneksi.configDB();
+            Connection conn = Config.configDB();
             Statement stm = conn.createStatement();
             stm.executeUpdate(query);
             JOptionPane.showMessageDialog(null, "Data berhasil ditambahkan");

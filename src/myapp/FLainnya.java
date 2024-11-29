@@ -73,7 +73,7 @@ private void initialize() {
 }
 
 private void loadMakananToComboBox(ComboBox<String> comboBox) {
-    try (Connection conn = Koneksi.configDB()) {
+    try (Connection conn = Config.configDB()) {
         String query = "SELECT menu_makanan FROM makanan";
         try (PreparedStatement stmt = conn.prepareStatement(query);
              ResultSet rs = stmt.executeQuery()) {
@@ -87,7 +87,7 @@ private void loadMakananToComboBox(ComboBox<String> comboBox) {
 }
 
 private void loadMinumanToComboBox(ComboBox<String> comboBox) {
-    try (Connection conn = Koneksi.configDB()) {
+    try (Connection conn = Config.configDB()) {
         String query = "SELECT menu_minuman FROM minuman";
         try (PreparedStatement stmt = conn.prepareStatement(query);
              ResultSet rs = stmt.executeQuery()) {
@@ -130,7 +130,7 @@ private void addComboBoxListener(ComboBox<String> comboBox, Label[] lblItemArray
 
 
 private int getHarga(String item) {
-    try (Connection conn = Koneksi.configDB()) {
+    try (Connection conn = Config.configDB()) {
         String query = "SELECT harga FROM makanan WHERE menu_makanan = ? UNION " +
                        "SELECT harga FROM minuman WHERE menu_minuman = ?";
         try (PreparedStatement stmt = conn.prepareStatement(query)) {
@@ -221,7 +221,7 @@ private void updateTotalHarga() {
                 }
             }
 
-            try (Connection conn = Koneksi.configDB()) {
+            try (Connection conn = Config.configDB()) {
                 String sql = "INSERT INTO pesanan (nama, no_meja, tanggal_pesan, menu_makanan, menu_minuman, total_harga) VALUES (?, ?, ?, ?, ?, ?)";
                 try (PreparedStatement stmt = conn.prepareStatement(sql)) {
                     stmt.setString(1, namaPesanan);
