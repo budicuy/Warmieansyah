@@ -21,7 +21,7 @@ import java.sql.Statement;
 public class FMinuman extends Application {
 
     @FXML
-    private Button btMakanan, btTambah, btDash, btAbout, btKeluar;
+    private Button btMakanan, btTambah, btDash, btAbout, btKeluar, btDetail;
 
     @FXML
     private TableView<Menu_Minuman> tblMinuman;
@@ -71,11 +71,32 @@ public class FMinuman extends Application {
 
         actionColumn.setCellFactory(param -> new TableCell<>() {
             private final Button btnDelete = new Button("Hapus");
+            private final Button btEdit = new Button("Edit");
             private final HBox hbox = new HBox(10, btnDelete);
+            private final HBox ebox = new HBox(10, btEdit);
 
             {
                 btnDelete.setOnAction(event -> handleDelete(getTableRow().getItem()));
             }
+
+            {
+                btEdit.setOnAction(event -> {
+                    Menu_Minuman minuman = getTableRow().getItem();
+                    if (minuman != null) {
+                        FEditMinuman.Minuman(minuman); // Pemanggilan metode yang benar
+                        try {
+                            Parent root = FXMLLoader.load(getClass().getResource("FEditMinuman.fxml"));
+                            Stage stage = (Stage) btEdit.getScene().getWindow();
+                            stage.setScene(new Scene(root));
+                            stage.setTitle("Edit Minuman");
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+                
+            }
+
 
             @Override
             protected void updateItem(Void item, boolean empty) {
@@ -83,7 +104,8 @@ public class FMinuman extends Application {
                 if (empty) {
                     setGraphic(null);
                 } else {
-                    setGraphic(hbox);
+                    HBox container = new HBox(10, btnDelete, btEdit);
+                    setGraphic(container);
                 }
             }
         });

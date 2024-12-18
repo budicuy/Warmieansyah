@@ -27,8 +27,4 @@ public class App extends Application {
         launch(args);
     }
 
-    public static void setRoot(String string) {
-        throw new UnsupportedOperationException("Unimplemented method 'setRoot'");
-    }
-
 }

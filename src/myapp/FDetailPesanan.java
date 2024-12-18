@@ -53,7 +53,6 @@ public class FDetailPesanan extends Application {
     }
 
     private String getHarga(String item) {
-        System.out.println("Item: " + item); // Debugging untuk melihat item
         switch (item) {
             case "Mie Seddap":
                 return "5000";
@@ -80,7 +79,7 @@ public class FDetailPesanan extends Application {
             case "Strawberry Milk":
                 return "7000";
             default:
-                return "0"; // Jika item tidak dikenali
+                return "0"; 
         }
     }
 

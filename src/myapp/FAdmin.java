@@ -112,7 +112,7 @@ public class FAdmin extends Application {
                             Parent root = FXMLLoader.load(getClass().getResource("FDetailPesanan.fxml"));
                             Stage stage = (Stage) btnDetail.getScene().getWindow();
                             stage.setScene(new Scene(root));
-                            stage.setTitle("Login");
+                            stage.setTitle("Detail");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
